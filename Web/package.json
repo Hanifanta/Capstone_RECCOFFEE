@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "server": "http-server ."
+  },
+  "dependencies": {
+    "bootstrap": "^5.2.2"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}

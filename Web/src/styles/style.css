@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&family=Poppins:wght@300;400;700&display=swap");
+
+.ppns {
+  font-family: "Poppins", sans-serif;
+}
+
+.osw {
+  font-family: "Oswald", sans-serif;
+}
+
+.bdr {
+  border: solid red;
+}
+
+.bdrb {
+  border: solid blue;
+}
+
+#home {
+  background-image: url("https://raw.githubusercontent.com/Hanifanta/Capstone_RECCOFFEE/main/Web/assets/bghome.png");
+  background-size: cover;
+  height: 100vh;
+}
+
+.home-content > h1 {
+  font-size: 100px;
+}

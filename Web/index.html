@@ -9,14 +9,16 @@
       rel="stylesheet"
       href="../node_modules/bootstrap/dist/css/bootstrap.min.css"
     />
+    <link rel="stylesheet" href="./src/styles/style.css" />
+    <link rel="stylesheet" href="./src//styles/custom.css" />
   </head>
-  <body>
+  <body id="homepage">
     <header>
-      <nav class="navbar navbar-expand-lg bg-light">
+      <nav id="navbar_top" class="navbar navbar-expand-sm bg-light">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
             <img
-              src="./assets/Icon-recoffe.png"
+              src="https://raw.githubusercontent.com/Hanifanta/Capstone_RECCOFFEE/main/Web/assets/Icon-recoffe.png"
               alt="ReCoffee"
               width="30"
               height="24"
@@ -33,23 +35,25 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="collapse navbar-collapse pp" id="navbarSupportedContent">
             <div class="me-auto"></div>
             <ul class="navbar-nav mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active ppns" aria-current="page" href="#"
+                  >Home</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Menu</a>
+                <a class="nav-link ppns" href="#menu">Menu</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Shop</a>
+                <a class="nav-link ppns" href="#shop">Shop</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link disabled">About</a>
+                <a class="nav-link ppns" href="#about">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link disabled">Team</a>
+                <a class="nav-link ppns" href="#team">Team</a>
               </li>
             </ul>
           </div>
@@ -57,16 +61,47 @@
       </nav>
     </header>
     <main>
-      <article>
-        <section></section>
+      <article
+        id="home"
+        class="container-fluid d-flex align-items-center justify-content-center flex-column"
+      >
+        <section class="home-content">
+          <h1 class="osw text-center text-white"><b>RECCOFFEE</b></h1>
+          <p class="ppns text-center text-white fs-5">
+            Find coffee based on your preferences
+          </p>
+        </section>
+        <button type="button" class="btn btn-primary btn-lg text-white fw-bold">
+          F I N D
+        </button>
+      </article>
+      <article id="menu" class="container-fluid bdr">
+        <section>
+          <h1>Menu</h1>
+        </section>
+      </article>
+      <article id="find" class="container-fluid bdr">
+        <h1>Find</h1>
+      </article>
+      <article id="shop" class="container-fluid bdr">
+        <h1>Shop</h1>
+      </article>
+      <article id="about" class="container-fluid bdr">
+        <h1>About</h1>
       </article>
       <aside>
-        <article>
-          <section></section>
+        <article id="team" class="container-fluid bdr">
+          <h1>Team</h1>
         </article>
       </aside>
     </main>
-    <footer></footer>
+    <footer>
+      <div id="foot" class="container-fluid bdr">
+        <p>Copyright &#169; 2022 ReCoffe</p>
+        <img src="" alt="" />
+      </div>
+    </footer>
     <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./src/script/navbar.js"></script>
   </body>
 </html>
