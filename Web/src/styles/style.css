@@ -1,5 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&family=Poppins:wght@300;400;700&display=swap");
 
+aside {
+  background-image: url(/Web/assets/bgteam.png); 
+  color: white;
+  background-size: cover;
+  font-family: 'Oswald', sans-serif;
+}
+
 .ppns {
   font-family: "Poppins", sans-serif;
 }
