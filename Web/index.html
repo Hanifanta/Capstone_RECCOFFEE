@@ -63,8 +63,7 @@
     <main>
       <article
         id="home"
-        class="container-fluid d-flex align-items-center justify-content-center flex-column"
-      >
+        class="container-fluid d-flex align-items-center justify-content-center flex-column">
         <section class="home-content">
           <h1 class="osw text-center text-white"><b>RECCOFFEE</b></h1>
           <p class="ppns text-center text-white fs-5">
@@ -83,8 +82,19 @@
       <article id="find" class="container-fluid bdr">
         <h1>Find</h1>
       </article>
-      <article id="shop" class="container-fluid bdr">
-        <h1>Shop</h1>
+
+      <article id="shop" class="container-fluid">
+        <div class="container my-1 py-4 text-center">
+          <div class="row">
+            <div class="col">
+              <h1 class="osw">BUY HIGH QUALITY COFFEE</h1>
+            </div>
+          </div>
+        </div>
+
+        <shop-grid class="row row-cols-5 px-5 justify-content-between">
+          
+        </shop-grid>
       </article>
 
       <!-- about section -->
@@ -106,7 +116,7 @@
           <div class="container my-1 py-4 text-center">
             <div class="row">
               <div class="col">
-                <h1>OUR TEAM</h1>
+                <h1 class="osw">OUR TEAM</h1>
               </div>
             </div>
           </div>
@@ -157,5 +167,6 @@
     </footer>
     <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="./src/script/navbar.js"></script>
+    <script type="module" src="./src/script/shop-grid.js"></script>
   </body>
 </html>
