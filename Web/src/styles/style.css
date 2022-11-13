@@ -28,6 +28,38 @@
   font-size: 100px;
 }
 
+aside {
+  background-image: url("https://raw.githubusercontent.com/Hanifanta/Capstone_RECCOFFEE/main/Web/assets/bgteam.png"); 
+  color: white;
+  background-size: cover;
+}
+
+footer {
+  color: white;
+  background-color: #2f2f2f;
+}
+
+footer img {
+  width: 40px;
+  height: 40px;
+  object-fit: fill;
+}
+
+#shop {
+  background-color: bisque;
+}
+
+#shop .card {
+  background-color: white;
+  width: 30vh;
+  height: 30vh;
+
+  @media screen and (max-width: 530px) {
+    width: 75vw;
+    height: 75vw;
+  }
+}
+
 #menu {
   background-image: url("https://raw.githubusercontent.com/Hanifanta/Capstone_RECCOFFEE/main/Web/assets/bgMenu.png");
   background-size: cover;
