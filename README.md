@@ -34,8 +34,7 @@
 - Python
 
 ### Dataset 
-- [Coffee Review Database](https://www.kaggle.com/datasets/hanifalirsyad/coffee-scrap-coffeereview)
-Dataset (Web Scraping)
+- [Coffee Review Dataset](https://www.kaggle.com/datasets/hanifalirsyad/coffee-scrap-coffeereview) (Web Scraping)
 
 ## Documentation
 -
