@@ -4,11 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link
-      rel="stylesheet"
-      href="../node_modules/bootstrap/dist/css/bootstrap.min.css"
-    />
+    <title>Recoffe</title>
+    <link href="../node_modules/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="./src/styles/style.css" />
     <link rel="stylesheet" href="./src//styles/custom.css" />
   </head>
@@ -64,6 +61,7 @@
       </nav>
     </header>
     <main>
+      <!-- HomePage -->
       <article
         id="home"
         class="vh-100 container-fluid d-flex align-items-center justify-content-center flex-column"
@@ -78,48 +76,113 @@
           F I N D
         </button>
       </article>
-      <article id="menu" class="container-fluid min-vh-100 d-flex flex-column">
-        <div class="row d-flex text-center p-5">
-          <h3 class="osw">WE BELIEVE IN GREAT-TASTING COFFEE</h3>
-        </div>
-        <div class="flex-fill row text-center p-3">
-          <div
-            class="col-sm d-flex flex-column align-items-center justify-content-center"
-          >
-            <img src="null" class="cfm" />
-            <p class="ppns fw-semibold fs-3">B L A C K</p>
-            <p class="ppns sub-title">
-              Black coffee is as simple as it gets with ground coffee beans
-              steeped in hot water, served warm. And if you want to sound fancy,
-              you can call black coffee by its proper name: cafe noir.
-            </p>
-          </div>
-          <div
-            class="col-sm d-flex flex-column align-items-center justify-content-center"
-          >
-            <img src="" class="cfm" />
-            <p class="ppns fw-semibold fs-3">B L A C K</p>
-            <p class="ppns sub-title">
-              Black coffee is as simple as it gets with ground coffee beans
-              steeped in hot water, served warm. And if you want to sound fancy,
-              you can call black coffee by its proper name: cafe noir.
-            </p>
-          </div>
-          <div
-            class="col-sm d-flex flex-column align-items-center justify-content-center"
-          >
-            <img src="" class="cfm" />
-            <p class="ppns fw-semibold fs-3">B L A C K</p>
-            <p class="ppns sub-title">
-              Black coffee is as simple as it gets with ground coffee beans
-              steeped in hot water, served warm. And if you want to sound fancy,
-              you can call black coffee by its proper name: cafe noir.
-            </p>
+
+      <!--Menu + Corousel-->
+      <article id="menu" class="p-0 container-fluid">
+        <h2 class="osw text-center pt-5">WE BELIEVE IN GREAT-TASTING COFFEE</h2>
+        <div class="corousel">
+          <div class="glide multi">
+            <div class="glide__track" data-glide-el="track">
+              <ul class="glide__slides">
+                <li class="glide__slide">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/A_small_cup_of_coffee.JPG/640px-A_small_cup_of_coffee.JPG"
+                    class="w-100"
+                  />
+                  <h2 class="ppns fw-semibold">Espresso</h2>
+                  <p class="ppns">
+                    As the most popular coffee drink out there, the latte is
+                    comprised of a shot of espresso and steamed milk with just a
+                    touch of foam. It can be ordered plain or with a flavor shot
+                    of anything from vanilla to pumpkin spice.,
+                  </p>
+                </li>
+                <li class="glide__slide">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Latte_at_Doppio_Ristretto_Chiang_Mai_01.jpg/509px-Latte_at_Doppio_Ristretto_Chiang_Mai_01.jpg"
+                    ,
+                    class="w-100"
+                  />
+                  <h2 class="ppns fw-semibold">Black</h2>
+                  <p class="ppns">
+                    Black coffee is as simple as it gets with ground coffee
+                    beans steeped in hot water, served warm. And if you want to
+                    sound fancy, you can call black coffee by its proper name:
+                    cafe noir. Black coffee is as simple as it gets with ground
+                    coffee beans steeped in hot water, served warm. And if you
+                    want to sound fancy, you can call black coffee by its proper
+                    name: cafe noir.
+                  </p>
+                </li>
+                <li class="glide__slide">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Latte_at_Doppio_Ristretto_Chiang_Mai_01.jpg/509px-Latte_at_Doppio_Ristretto_Chiang_Mai_01.jpg"
+                    ,
+                    class="w-100"
+                  />
+                  <h2 class="ppns fw-semibold">Black</h2>
+                  <p class="ppns">
+                    Black coffee is as simple as it gets with ground coffee
+                    beans steeped in hot water, served warm. And if you want to
+                    sound fancy, you can call black coffee by its proper name:
+                    cafe noir. Black coffee is as simple as it gets with ground
+                    coffee beans steeped in hot water, served warm. And if you
+                    want to sound fancy, you can call black coffee by its proper
+                    name: cafe noir.
+                  </p>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </article>
-      <article id="find" class="container-fluid bdr">
-        <h1>Find</h1>
+
+      <!-- Rekomendasi -->
+      <article id="find" class="d-flex flex-column flex-sm-row">
+        <section class="slidee ppns">
+          <div class="heading-rekomendasi">
+            <h4 class="osw fs-3">FIND THE PERFECT COFFEE FOR YOUR TASTE</h4>
+            <p>Search for coffee in the flavor you want</p>
+          </div>
+          <div class="sliding">
+            <p>Sweet</p>
+            <div class="range-input">
+              <input type="range" min="0" max="10" value="0" step="1" />
+              <div class="value">
+                <div></div>
+              </div>
+            </div>
+            <p>Accidity</p>
+            <div class="range-input2">
+              <input type="range" min="0" max="10" value="0" step="1" />
+              <div class="value2">
+                <div></div>
+              </div>
+            </div>
+            <p>Body</p>
+            <div class="range-input3">
+              <input type="range" min="0" max="10" value="0" step="1" />
+              <div class="value3">
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <button
+            type="button"
+            class="btn btn-sm btn-primary text-white fw-bold"
+          >
+            Search
+          </button>
+        </section>
+        <section
+          class="hasil-rekomendasi flex-grow-1 d-flex flex-column justify-content-end"
+        >
+          <button
+            class="btn btn-sm btn-primary text-white fw-bold align-self-start"
+          >
+            Go to Shop
+          </button>
+        </section>
       </article>
 
       <article id="shop" class="container-fluid">
@@ -130,9 +193,7 @@
             </div>
           </div>
         </div>
-
         <shop-grid class="row row-cols-auto px-5 py-3 justify-content-evenly">
-          
         </shop-grid>
       </article>
 
@@ -141,14 +202,24 @@
         <div class="row flex-column-reverse flex-lg-row">
           <div class="col p-5 align-self-center">
             <h1 class="osw">ABOUT US</h1>
-            <p class="ppns">RECCOFEE adalah sebuah website yang digunakan untuk memberikan rekomendasi jenis kopi berdasar preferensi pengguna. tetapi tidak hanya itu saja kami juga memberikan informasi seputar minuman kopi dan memberikan fitur untuk melakukan pembelian biji kopi yang berkualitas.</p>
+            <p class="ppns">
+              RECCOFEE adalah sebuah website yang digunakan untuk memberikan
+              rekomendasi jenis kopi berdasar preferensi pengguna. tetapi tidak
+              hanya itu saja kami juga memberikan informasi seputar minuman kopi
+              dan memberikan fitur untuk melakukan pembelian biji kopi yang
+              berkualitas.
+            </p>
           </div>
           <div class="col p-0">
-            <img src="https://raw.githubusercontent.com/Hanifanta/Capstone_RECCOFFEE/main/Web/assets/pictureAbout.png" alt="" class="img-fluid w-100">
+            <img
+              src="https://raw.githubusercontent.com/Hanifanta/Capstone_RECCOFFEE/main/Web/assets/pictureAbout.png"
+              alt=""
+              class="img-fluid w-100"
+            />
           </div>
         </div>
       </article>
-      
+
       <!-- team section -->
       <aside>
         <article id="team" class="container-fluid">
@@ -159,25 +230,29 @@
               </div>
             </div>
           </div>
-  
+
           <!-- team card -->
           <team-list class="row align-content-center my-2 py-4 px-5">
-          
           </team-list>
         </article>
       </aside>
     </main>
 
     <footer>
-      <div id="foot" class="d-flex p-3 flex-lg-row flex-column-reverse
-      justify-content-between align-items-center">
+      <div
+        id="foot"
+        class="d-flex p-3 flex-lg-row flex-column-reverse justify-content-between align-items-center"
+      >
         <div class="ppns text-wrap">Copyright&copy; RECOFFEE 2022</div>
-        <img src="./assets/GitHub-logo.png" alt="github"/>
+        <img src="./assets/GitHub-logo.png" alt="github" />
       </div>
     </footer>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.0.2/glide.js"></script>
     <script src="./src/script/navbar.js"></script>
     <script type="module" src="./src/script/components/team-list.js"></script>
     <script type="module" src="./src/script/components/shop-grid.js"></script>
+    <script src="./src/script/components/corousel.js"></script>
+    <script src="./src/script/components/slider.js"></script>
   </body>
 </html>
