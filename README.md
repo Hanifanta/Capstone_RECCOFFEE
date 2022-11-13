@@ -1,4 +1,4 @@
-# Sistem rekomendasi berdasarkan preferensi pengguna - Studi Independen Dicoding Capstone by C22-141
+# Reccoffee - Studi Independen Dicoding Capstone by C22-141
 
 [![Home.jpg](https://i.postimg.cc/Y9XT0HTy/Home.jpg)](https://postimg.cc/wymw4Sqh)
 
