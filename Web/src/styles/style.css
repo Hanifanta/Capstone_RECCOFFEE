@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&family=Poppins:wght@300;400;600;700&display=swap");
+@import "corousel.css";
+@import "slider.css";
+
 .ppns {
   font-family: "Poppins", sans-serif;
 }
@@ -28,8 +31,47 @@
   font-size: 100px;
 }
 
+#find {
+  background-image: url("https://raw.githubusercontent.com/Hanifanta/Capstone_RECCOFFEE/main/Web/assets/bgRekomendasi.png");
+  background-size: cover;
+  padding: 40px;
+}
+
+#find button {
+  border-radius: 30px;
+}
+
+.slidee p {
+  margin: 0;
+}
+
+.slidee h4 {
+  margin: 0;
+}
+
+.slidee button {
+  margin-bottom: 30px;
+}
+.heading-rekomendasi {
+  width: 70%;
+}
+.heading-rekomendasi > p {
+  font-size: 14px;
+}
+
+.sliding {
+  padding: 30px 0px;
+  font-weight: 500;
+}
+
+.hasil-rekomendasi {
+  background-color: white;
+  border-radius: 25px;
+  padding: 30px;
+}
+
 aside {
-  background-image: url("https://raw.githubusercontent.com/Hanifanta/Capstone_RECCOFFEE/main/Web/assets/bgteam.png"); 
+  background-image: url("https://raw.githubusercontent.com/Hanifanta/Capstone_RECCOFFEE/main/Web/assets/bgteam.png");
   color: white;
   background-size: cover;
 }
@@ -42,6 +84,7 @@ footer {
 footer img {
   width: 40px;
   height: 40px;
+  -o-object-fit: fill;
   object-fit: fill;
 }
 

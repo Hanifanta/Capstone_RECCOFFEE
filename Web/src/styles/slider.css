@@ -1,0 +1,135 @@
+:root {
+  --widthsliding: 300px;
+}
+/* input1 */
+
+.range-input {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.range-input .value {
+  color: #2f2f2f;
+  text-align: center;
+  font-weight: 600;
+  line-height: 40px;
+  height: 40px;
+  overflow: hidden;
+  margin-left: 10px;
+}
+.range-input .value div {
+  transition: all 300ms ease-in-out;
+}
+.range-input input {
+  box-shadow: inset 0 0 3px 0.2px rgb(0, 0, 0, 0.5);
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-appearance: none;
+  width: var(--widthsliding);
+  height: 15px;
+  border-radius: 30px;
+  background: #eddfb3;
+  border: none;
+  outline: none;
+}
+.range-input input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  background: #87805e;
+  border-radius: 50%;
+}
+
+/* input2 */
+.range-input2 {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.range-input2 .value2 {
+  color: #2f2f2f;
+  text-align: center;
+  font-weight: 600;
+  line-height: 40px;
+  height: 40px;
+  overflow: hidden;
+  margin-left: 10px;
+}
+
+.range-input2 .value2 div {
+  transition: all 300ms ease-in-out;
+}
+
+.range-input2 input {
+  box-shadow: inset 0 0 2px 0.1px rgb(0, 0, 0, 0.5);
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-appearance: none;
+  width: var(--widthsliding);
+  height: 15px;
+  border-radius: 30px;
+  background: #eddfb3;
+  border: none;
+  outline: none;
+}
+.range-input2 input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  background: #87805e;
+  border-radius: 50%;
+}
+
+/* input 3 */
+
+.range-input3 {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.range-input3 .value3 {
+  color: #2f2f2f;
+  text-align: center;
+  font-weight: 600;
+  line-height: 40px;
+  height: 40px;
+  overflow: hidden;
+  margin-left: 10px;
+}
+.range-input3 .value3 div {
+  transition: all 300ms ease-in-out;
+}
+.range-input3 input {
+  box-shadow: inset 0 0 2px 0.1px rgb(0, 0, 0, 0.5);
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-appearance: none;
+  width: var(--widthsliding);
+  height: 15px;
+  border-radius: 30px;
+  background: #eddfb3;
+  border: none;
+  outline: none;
+}
+.range-input3 input::-webkit-slider-thumb {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 16px;
+  height: 16px;
+  background: #87805e;
+  border-radius: 50%;
+}
