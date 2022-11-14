@@ -14,7 +14,7 @@ class TeamItem extends HTMLElement {
         this.innerHTML = 
         `
         <div class="card text-center border-0 bg-transparent">
-            <img class=" card-img-top mb-3" src="./assets/${this._team.photo}" alt="">
+            <img class=" card-img-top mb-3" src=${this._team.photo} alt="">
             <h5 class="card-title osw">${this._team.name}</h5>
             <p class="card-text ppns">${this._team.id}</p>
         </div>`;
