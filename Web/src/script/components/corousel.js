@@ -1,3 +1,5 @@
+import Glide from "@glidejs/glide";
+
 var glideMulti1 = new Glide(".multi", {
   type: "carousel",
   autoplay: 2500,
