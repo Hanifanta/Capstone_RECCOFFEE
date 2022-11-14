@@ -25,7 +25,7 @@
   width: 200px;
 }
 #home {
-  background-image: url("https://raw.githubusercontent.com/Hanifanta/Capstone_RECCOFFEE/main/Web/assets/bghome.png");
+  background-image: url("../assets/images/bghome.png");
   background-size: cover;
 }
 
@@ -34,7 +34,7 @@
 }
 
 #find {
-  background-image: url("https://raw.githubusercontent.com/Hanifanta/Capstone_RECCOFFEE/main/Web/assets/bgRekomendasi.png");
+  background-image: url("../assets/images/bgRekomendasi.png");
   background-size: cover;
   padding: 40px;
 }
@@ -73,7 +73,7 @@
 }
 
 aside {
-  background-image: url("https://raw.githubusercontent.com/Hanifanta/Capstone_RECCOFFEE/main/Web/assets/bgteam.png");
+  background-image: url("../assets/images/bgteam.png");
   color: white;
   background-size: cover;
 }
@@ -106,7 +106,7 @@ footer img {
 }
 
 #menu {
-  background-image: url("https://raw.githubusercontent.com/Hanifanta/Capstone_RECCOFFEE/main/Web/assets/bgMenu.png");
+  background-image: url("../assets/images/bgMenu.png");
   background-size: cover;
 }
 
