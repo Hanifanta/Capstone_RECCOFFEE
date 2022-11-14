@@ -1,11 +1,15 @@
 import './components/shop-grid.js';
 import './components/corousel.js';
 import './components/team-list';
+
+// images import for WebPack
 import githubImg from '../assets/images/GitHub-logo.png';
+import coffeeIcon from '../assets/images/Icon-recoffe.png';
+import aboutImg from '../assets/images/pictureAbout.png';
 
 const main = () => {
   setNavbar();
-  setFooter();
+  loadImages();
 }
 
 // formerly navbar.js
@@ -24,8 +28,24 @@ const setNavbar = () => {
   });
 }
 
-const setFooter = () => {
+const loadImages = () => {
+  const navbarBrand = document.querySelector('.navbar-brand');
+  const pictureAbout = document.getElementById('picture-about');
   const footer = document.getElementById('foot');
+
+
+  const coffeeIconElement = new Image();
+  coffeeIconElement.src = coffeeIcon;
+  coffeeIconElement.width = 30;
+  coffeeIconElement.height = 24;
+  coffeeIconElement.alt = 'RecCoffee'
+  navbarBrand.appendChild(coffeeIconElement);
+
+  const aboutImageElement = new Image();
+  aboutImageElement.src = aboutImg;
+  aboutImageElement.classList.add('img-fluid');
+  aboutImageElement.classList.add('w-100');
+  pictureAbout.appendChild(aboutImageElement);
   
   const githubImageElement = new Image();
   githubImageElement.src = githubImg;
