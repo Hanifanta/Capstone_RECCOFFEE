@@ -1,9 +1,17 @@
 {
+  "name": "reccoffee",
+  "version": "1.0.0",
+  "description": "An recomendation website for your truly coffees",
+  "main": "app.js",
+  "author": "reccoffee_team",
+  "license": "ISC",
   "scripts": {
     "server": "http-server ."
   },
   "dependencies": {
-    "bootstrap": "^5.2.2"
+    "@glidejs/glide": "^3.6.0",
+    "bootstrap": "^5.2.2",
+    "glide": "^0.2.0"
   },
   "devDependencies": {
     "http-server": "^14.1.1"

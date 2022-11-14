@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (window.scrollY > 0) {
       document.getElementById("navbar_top").classList.add("fixed-top");
       // add padding top to show content behind navbar
-      navbar_height = document.querySelector(".navbar").offsetHeight;
+      const navbar_height = document.querySelector(".navbar").offsetHeight;
       document.body.style.paddingTop = navbar_height + "px";
     } else {
       document.getElementById("navbar_top").classList.remove("fixed-top");
