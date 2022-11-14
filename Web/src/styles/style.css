@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&family=Poppins:wght@300;400;600;700&display=swap");
+@import "/node_modules/bootstrap/dist/css/bootstrap.min.css";
 @import "corousel.css";
 @import "slider.css";
+@import "custom.css";
 
 .ppns {
   font-family: "Poppins", sans-serif;

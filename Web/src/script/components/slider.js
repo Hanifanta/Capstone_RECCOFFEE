@@ -4,7 +4,6 @@ let rangeInput3 = document.querySelector(".range-input3 input");
 
 let rangeValue = document.querySelector(".range-input .value div");
 let rangeValue2 = document.querySelector(".range-input2 .value2 div");
-
 let rangeValue3 = document.querySelector(".range-input3 .value3 div");
 
 let start = parseFloat(rangeInput.min);
