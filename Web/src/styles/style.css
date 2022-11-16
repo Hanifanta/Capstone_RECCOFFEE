@@ -20,9 +20,13 @@
   border: solid blue;
 }
 
-.cfm {
-  height: 200px;
-  width: 200px;
+:root {
+  --widthsliding: 300px;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: var(--scrll-padding, 560px);
 }
 #home {
   background-image: url("../assets/images/bghome.png");

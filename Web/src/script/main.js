@@ -16,14 +16,20 @@ const main = () => {
 const setNavbar = () => {
   window.addEventListener("scroll", function () {
     if (window.scrollY > 0) {
+      const navbar_height = document
+        .querySelector(".navbar")
+        .getBoundingClientRect().height;
+
+      document.documentElement.style.setProperty(
+        "--scrll-padding",
+        `${navbar_height}px`
+      );
+
       document.getElementById("navbar_top").classList.add("fixed-top");
-      // add padding top to show content behind navbar
-      const navbar_height = document.querySelector(".navbar").offsetHeight;
-      document.body.style.paddingTop = navbar_height + "px";
+      this.document.body.style.marginTop = `${navbar_height}px`;
     } else {
       document.getElementById("navbar_top").classList.remove("fixed-top");
-      // remove padding top from body
-      document.body.style.paddingTop = "0";
+      this.document.body.style.marginTop = "0";
     }
   });
 };

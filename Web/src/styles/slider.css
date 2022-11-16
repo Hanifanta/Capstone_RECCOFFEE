@@ -1,7 +1,3 @@
-:root {
-  --widthsliding: 300px;
-}
-
 input::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
