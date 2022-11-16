@@ -1,45 +1,46 @@
-let rangeInput = document.querySelector(".range-input input");
-let rangeInput2 = document.querySelector(".range-input2 input");
-let rangeInput3 = document.querySelector(".range-input3 input");
+import $ from "jquery";
 
-let rangeValue = document.querySelector(".range-input .value div");
-let rangeValue2 = document.querySelector(".range-input2 .value2 div");
-let rangeValue3 = document.querySelector(".range-input3 .value3 div");
+const min = 0;
+const max = 10;
+const step = 0.1;
 
-let start = parseFloat(rangeInput.min);
-let end = parseFloat(rangeInput.max);
-let step = parseFloat(rangeInput.step);
+for (let i = 1; i <= 5; i++) {
+  const rangeinput = $(`.range-input${i}`)[0].style;
+  const rangeinputvalue = $(`.range-input${i} .value${i}`)[0].style;
+  const textafterRange = $(`.range-input${i} .value${i} div`)[0];
+  const inputContainer = $(`.range-input${i} input`);
 
-let start2 = parseFloat(rangeInput2.min);
-let end2 = parseFloat(rangeInput2.max);
-let step2 = parseFloat(rangeInput2.step);
+  for (let i = min; i <= max; i += step) {
+    textafterRange.innerHTML += `<div> ${i.toFixed(1)} </div>`;
+  }
 
-let start3 = parseFloat(rangeInput2.min);
-let end3 = parseFloat(rangeInput2.max);
-let step3 = parseFloat(rangeInput2.step);
-for (let i = start; i <= end; i += step) {
-  rangeValue.innerHTML += "<div>" + i + "</div>";
+  inputContainer.on("input", function () {
+    let top = (this.value / step) * -40;
+    textafterRange.style.marginTop = top + "px";
+  });
+
+  //styleloop
+  rangeinput.display = "flex";
+  rangeinput.width = "max-content";
+  rangeinput.alignItems = "center";
+  rangeinput.borderRadius = "10px";
+
+  rangeinputvalue.color = "$2f2f2f";
+  rangeinputvalue.textAlign = "center";
+  rangeinputvalue.fontWeight = "600";
+  rangeinputvalue.lineHeight = "40px";
+  rangeinputvalue.height = "40px";
+  rangeinputvalue.overflow = "hidden";
+  rangeinputvalue.marginLeft = "10px";
+
+  textafterRange.style.transition = "all 300ms ease-in-out";
+
+  inputContainer[0].style.boxShadow = "inset 0 0 3px 0.2px rgb(0, 0, 0, 0.5)";
+  inputContainer[0].style.appearance = "none";
+  inputContainer[0].style.width = "var(--widthsliding)";
+  inputContainer[0].style.height = "15px";
+  inputContainer[0].style.borderRadius = "30px";
+  inputContainer[0].style.background = "#eddfb3";
+  inputContainer[0].style.border = "none";
+  inputContainer[0].style.outline = "none";
 }
-
-for (let i = start2; i <= end2; i += step2) {
-  rangeValue2.innerHTML += "<div>" + i + "</div>";
-}
-
-for (let i = start3; i <= end3; i += step3) {
-  rangeValue3.innerHTML += "<div>" + i + "</div>";
-}
-
-rangeInput.addEventListener("input", function () {
-  let top = (parseFloat(rangeInput.value) / step) * -40;
-  rangeValue.style.marginTop = top + "px";
-});
-
-rangeInput2.addEventListener("input", function () {
-  let top2 = (parseFloat(rangeInput2.value) / step) * -40;
-  rangeValue2.style.marginTop = top2 + "px";
-});
-
-rangeInput3.addEventListener("input", function () {
-  let top3 = (parseFloat(rangeInput3.value) / step) * -40;
-  rangeValue3.style.marginTop = top3 + "px";
-});
