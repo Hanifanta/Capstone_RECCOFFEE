@@ -28,6 +28,7 @@ html {
   scroll-behavior: smooth;
   scroll-padding-top: var(--scrll-padding, 560px);
 }
+
 #home {
   background-image: url("../assets/images/bghome.png");
   background-size: cover;
