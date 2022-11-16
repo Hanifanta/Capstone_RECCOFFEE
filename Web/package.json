@@ -13,7 +13,8 @@
   "dependencies": {
     "@glidejs/glide": "^3.6.0",
     "bootstrap": "^5.2.2",
-    "glide": "^0.2.0"
+    "glide": "^0.2.0",
+    "jquery": "^3.6.1"
   },
   "devDependencies": {
     "@babel/core": "^7.20.2",
