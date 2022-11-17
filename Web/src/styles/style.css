@@ -123,3 +123,8 @@ shop-grid::-webkit-scrollbar-thumb {
   color: #666666;
   font-size: 10px;
 }
+
+.product-img {
+  object-fit: cover;
+  object-position: top;
+}
