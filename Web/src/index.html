@@ -71,12 +71,29 @@
       </article>
 
       <!--Menu + Corousel-->
-      <article id="menu" class="p-0 container-fluid">
-        <h2 class="osw text-center pt-5">WE BELIEVE IN GREAT-TASTING COFFEE</h2>
-        <div class="corousel">
-          <div class="glide multi">
+      <article id="menu" class="container-fluid p-2">
+        <div class="menu_title d-flex align-items-end justify-content-center">
+          <p class="osw m-0 text-center">
+            WE BELIEVE IN <span> GREAT-TASTING COFFEE</span>
+          </p>
+        </div>
+        <div class="corousel d-flex align-items-center justify-content-center">
+          <div class="glide">
             <div class="glide__track" data-glide-el="track">
               <ul class="glide__slides">
+                <li class="glide__slide">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/A_small_cup_of_coffee.JPG/640px-A_small_cup_of_coffee.JPG"
+                    class="w-100"
+                  />
+                  <h2 class="ppns fw-semibold">Espresso</h2>
+                  <p class="ppns">
+                    As the most popular coffee drink out there, the latte is
+                    comprised of a shot of espresso and steamed milk with just a
+                    touch of foam. It can be ordered plain or with a flavor shot
+                    of anything from vanilla to pumpkin spice.,
+                  </p>
+                </li>
                 <li class="glide__slide">
                   <img
                     src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/A_small_cup_of_coffee.JPG/640px-A_small_cup_of_coffee.JPG"
@@ -131,64 +148,109 @@
       </article>
 
       <!-- Rekomendasi -->
-      <article id="find" class="d-flex flex-column flex-sm-row">
-        <section class="slidee ppns">
-          <div class="heading-rekomendasi">
-            <h4 class="osw fs-3">FIND THE PERFECT COFFEE FOR YOUR TASTE</h4>
-            <p>Search for coffee in the flavor you want</p>
+      <article id="find" class="container-fluid overflow-hidden">
+        <section class="row">
+          <!-- range slide rekomenfasi -->
+          <div class="range-rekomendasi col-12 col-md-6 slidee ppns">
+            <div class="heading-rekomendasi">
+              <h4 class="osw fs-3">
+                FIND THE PERFECT COFFEE <span> FOR YOUR TASTE</span>
+              </h4>
+              <p>Search for coffee in the flavor you want</p>
+            </div>
+            <div class="sliding-slider">
+              <p>Aroma</p>
+              <div class="range-input1">
+                <input type="range" min="0" max="10" value="0" step="0.1" />
+                <div class="value1">
+                  <div></div>
+                </div>
+              </div>
+              <p>Accidity</p>
+              <div class="range-input2">
+                <input type="range" min="0" max="10" value="0" step="0.1" />
+                <div class="value2">
+                  <div></div>
+                </div>
+              </div>
+              <p>Body</p>
+              <div class="range-input3">
+                <input type="range" min="0" max="10" value="0" step="0.1" />
+                <div class="value3">
+                  <div></div>
+                </div>
+              </div>
+              <p>Flavor</p>
+              <div class="range-input4">
+                <input type="range" min="0" max="10" value="0" step="0.1" />
+                <div class="value4">
+                  <div></div>
+                </div>
+              </div>
+              <p>Aftertaste</p>
+              <div class="range-input5">
+                <input type="range" min="0" max="10" value="0" step="0.1" />
+                <div class="value5">
+                  <div></div>
+                </div>
+              </div>
+
+              <button
+                type="button"
+                class="btn btn-sm btn-primary text-white fw-bold"
+              >
+                Search
+              </button>
+            </div>
           </div>
-          <div class="sliding">
-            <p>Aroma</p>
-            <div class="range-input1">
-              <input type="range" min="0" max="10" value="0" step="0.1" />
-              <div class="value1">
-                <div></div>
+          <!-- Hasil Rekomendasi -->
+          <div
+            class="hasil-rekomendasi-container col-12 col-md-6 d-flex flex-column"
+          >
+            <div class="hasil-rekomendasi p-5 m-auto d-grid">
+              <div class="row">
+                <div class="rating text-center col-4 col-lg-2 d-grid">
+                  <p class="m-0 mt-auto">Rating</p>
+                  <h1 class="mb-auto">96</h1>
+                </div>
+                <div class="col-8 col-lg-10 d-grid">
+                  <h1 class="m-0 mt-auto">David's Nose</h1>
+                  <p class="m-0 mb-auto">Honduras Blue Hole Estates</p>
+                </div>
               </div>
-            </div>
-            <p>Accidity</p>
-            <div class="range-input2">
-              <input type="range" min="0" max="10" value="0" step="0.1" />
-              <div class="value2">
-                <div></div>
+              <div class="row my-3">
+                <div class="para col-6 col-lg-3">
+                  <p>Aroma</p>
+                  <p>Acid</p>
+                  <p>Body</p>
+                  <p>Flavor</p>
+                  <p>AfterTaste</p>
+                </div>
+                <div class="col-6 col-lg-3">
+                  <p>9.0</p>
+                  <p>8.0</p>
+                  <p>9.0</p>
+                  <p>9.0</p>
+                  <p>8.0</p>
+                </div>
+                <div class="col-12 col-lg-6 d-flex">
+                  <div class="desc-hasil d-flex flex-column">
+                    <p>
+                      <span class="fw-bold">Description :</span> Remarkably
+                      sweet, rich-toned, deeply floral. Star jasmine, lychee,
+                      dried ginger, cocoa nib, myrrh in aroma and cup. Sweetly
+                      tart structure with juicy, lively acidity; delicate, very
+                      syrupy mouthfeel. Crisp, long, fruit- and cocoa-toned
+                      finish.
+                    </p>
+                  </div>
+                </div>
               </div>
-            </div>
-            <p>Body</p>
-            <div class="range-input3">
-              <input type="range" min="0" max="10" value="0" step="0.1" />
-              <div class="value3">
-                <div></div>
-              </div>
-            </div>
-            <p>Flavor</p>
-            <div class="range-input4">
-              <input type="range" min="0" max="10" value="0" step="0.1" />
-              <div class="value4">
-                <div></div>
-              </div>
-            </div>
-            <p>Aftertaste</p>
-            <div class="range-input5">
-              <input type="range" min="0" max="10" value="0" step="0.1" />
-              <div class="value5">
-                <div></div>
-              </div>
+              <button class="btn btn-sm btn-primary text-white fw-bold me-auto">
+                See other coffe
+              </button>
             </div>
           </div>
-          <button
-            type="button"
-            class="btn btn-sm btn-primary text-white fw-bold"
-          >
-            Search
-          </button>
-        </section>
-        <section
-          class="hasil-rekomendasi flex-grow-1 d-flex flex-column justify-content-end"
-        >
-          <button
-            class="btn btn-sm btn-primary text-white fw-bold align-self-start"
-          >
-            Go to Shop
-          </button>
         </section>
       </article>
 

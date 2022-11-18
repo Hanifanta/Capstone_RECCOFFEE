@@ -1,8 +1,14 @@
-@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&family=Poppins:wght@300;400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap");
 @import "/node_modules/bootstrap/dist/css/bootstrap.min.css";
-@import "corousel.css";
 @import "slider.css";
 @import "custom.css";
+@import "menu.css";
+@import "find.css";
+
+:root {
+  --widthsliding: 100%;
+  --widthrange: 80%;
+}
 
 .ppns {
   font-family: "Poppins", sans-serif;
@@ -20,10 +26,6 @@
   border: solid blue;
 }
 
-:root {
-  --widthsliding: 300px;
-}
-
 html {
   scroll-behavior: smooth;
   scroll-padding-top: var(--scrll-padding, 560px);
@@ -32,49 +34,21 @@ html {
 #home {
   background-image: url("../assets/images/bghome.png");
   background-size: cover;
+  min-height: 100vh;
 }
 
 .home-content > h1 {
-  font-size: 100px;
+  font-size: clamp(50px, 8vw, 100px);
 }
 
-#find {
-  background-image: url("../assets/images/bgRekomendasi.png");
+#menu {
+  background-image: url("../assets/images/bgMenu.png");
   background-size: cover;
-  padding: 40px;
 }
 
-#find button {
-  border-radius: 30px;
-}
-
-.slidee p {
-  margin: 0;
-}
-
-.slidee h4 {
-  margin: 0;
-}
-
-.slidee button {
-  margin-bottom: 30px;
-}
-.heading-rekomendasi {
-  width: 70%;
-}
-.heading-rekomendasi > p {
-  font-size: 14px;
-}
-
-.sliding {
-  padding: 30px 0px;
-  font-weight: 500;
-}
-
-.hasil-rekomendasi {
-  background-color: white;
-  border-radius: 25px;
-  padding: 30px;
+.sub-title {
+  color: #666666;
+  font-size: 10px;
 }
 
 aside {
@@ -110,12 +84,38 @@ footer img {
   }
 }
 
-#menu {
-  background-image: url("../assets/images/bgMenu.png");
-  background-size: cover;
+@media screen and (max-width: 1030px) {
+  .desc-hasil > p {
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+  }
+
+  .hasil-rekomendasi {
+    padding: 30px 20px 10px 30px !important;
+  }
 }
 
-.sub-title {
-  color: #666666;
-  font-size: 10px;
+@media screen and (max-width: 576px) {
+  :root {
+    --widthrange: 100%;
+  }
+
+  #find {
+    padding: 0px;
+    height: auto;
+  }
+
+  .slidee {
+    padding: 40px 40px 0px 40px;
+  }
+  .hasil-rekomendasi {
+    padding: 40px 40px 0px 40px;
+    border-radius: 0px;
+  }
+
+  /* .hasil-rekomendasi-container {
+    display: none !important;
+  } */
 }
