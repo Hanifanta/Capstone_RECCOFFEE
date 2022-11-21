@@ -51,6 +51,18 @@ html {
   font-size: 10px;
 }
 
+#rekomendasi {
+  background-image: url("../assets/images/bgMenu.png");
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.item-rekomendasi {
+  background-color: white;
+  margin: 10px;
+  border-radius: 25px;
+  box-shadow: 0px 2px 5px 1px rgba(15, 15, 15, 0.25);
+}
 aside {
   background-image: url("../assets/images/bgteam.png");
   color: white;
