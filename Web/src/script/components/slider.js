@@ -21,7 +21,7 @@ for (let i = 1; i <= 5; i++) {
 
   //styleloop
   rangeinput.display = "flex";
-  rangeinput.width = "max-content";
+  rangeinput.width = "var(--widthrange)";
   rangeinput.alignItems = "center";
   rangeinput.borderRadius = "10px";
 
@@ -30,6 +30,7 @@ for (let i = 1; i <= 5; i++) {
   rangeinputvalue.fontWeight = "600";
   rangeinputvalue.lineHeight = "40px";
   rangeinputvalue.height = "40px";
+  rangeinputvalue.width = `40px`;
   rangeinputvalue.overflow = "hidden";
   rangeinputvalue.marginLeft = "10px";
 

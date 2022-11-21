@@ -1,0 +1,52 @@
+#find {
+  background-image: url("../assets/images/bgRekomendasi.png");
+  background-size: cover;
+  padding: 40px;
+  min-height: 95vh;
+}
+
+#find button {
+  border-radius: 30px;
+}
+
+.slidee p {
+  margin: 0;
+}
+
+.slidee h4 {
+  margin: 0;
+}
+
+.slidee button {
+  margin-bottom: 30px;
+}
+
+.heading-rekomendasi {
+  width: 70%;
+}
+.heading-rekomendasi > p {
+  font-size: 14px;
+}
+
+.heading-rekomendasi > h4 > span {
+  display: block;
+}
+
+.sliding-slider {
+  padding: 30px 0px;
+  font-weight: 500;
+}
+
+.hasil-rekomendasi {
+  background-color: white;
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+.rating {
+  background-color: rgb(238, 238, 238);
+}
+
+.para > p {
+  font-weight: bold;
+}

@@ -1,0 +1,86 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.0.2/css/glide.core.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.0.2/css/glide.theme.css");
+
+#menu {
+  height: 95vh;
+}
+
+.menu_title > p {
+  font-size: xx-large;
+}
+.glide__slides {
+  text-align: center;
+  justify-items: center;
+  align-content: center;
+}
+
+.glide__slide h2 {
+  padding-top: 2vh;
+}
+
+.glide__slide p {
+  padding: 0 8vh;
+}
+
+.menu_title {
+  height: 15%;
+}
+
+.menu_title > p {
+  font-weight: 500;
+}
+.corousel {
+  height: 85%;
+}
+
+#menu img {
+  border-radius: 50%;
+  width: calc(40vw) !important;
+  height: calc(40vw);
+  min-height: 200px;
+  min-width: 200px;
+  max-width: 250px;
+  max-height: 250px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center;
+  object-position: center;
+}
+
+.glide__slide > p {
+  font-size: smaller;
+  color: #666666;
+  margin: 0;
+  -webkit-line-clamp: 4;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+
+@media screen and (max-width: 600px) {
+  /* #menu {
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+  } */
+
+  .menu_title {
+    height: 20%;
+  }
+
+  .corousel {
+    height: 80%;
+  }
+
+  .menu_title > p {
+    font-size: max(30px, 6vw);
+  }
+
+  .menu_title > p > span {
+    display: block;
+  }
+
+  .glide__slide > p {
+    padding: 0 10vw;
+    -webkit-line-clamp: 5;
+  }
+}
