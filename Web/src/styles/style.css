@@ -81,20 +81,6 @@ footer img {
   object-fit: fill;
 }
 
-#shop {
-  background-color: bisque;
-}
-
-#shop .card {
-  background-color: white;
-  width: 30vh;
-  height: 30vh;
-
-  @media screen and (max-width: 530px) {
-    width: 75vw;
-    height: 75vw;
-  }
-}
 
 @media screen and (max-width: 1030px) {
   .desc-hasil > p {
