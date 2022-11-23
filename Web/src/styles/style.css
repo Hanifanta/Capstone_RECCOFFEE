@@ -98,7 +98,7 @@ footer img {
 
 @media screen and (max-width: 1030px) {
   .desc-hasil > p {
-    -webkit-line-clamp: 2;
+    -webkit-line-clamp: 7;
     overflow: hidden;
     display: -webkit-box;
     -webkit-box-orient: vertical;
@@ -109,6 +109,23 @@ footer img {
   }
 }
 
+@media screen and (max-width: 992px) {
+  .desc-hasil > p {
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+  }
+
+  .hasil-rekomendasi {
+    padding: 30px 20px 10px 30px !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  :root {
+    --widthrange: 100%;
+  }
+}
 @media screen and (max-width: 576px) {
   :root {
     --widthrange: 100%;
@@ -119,8 +136,9 @@ footer img {
     height: auto;
   }
 
-  .slidee {
+  .range-rekomendasi {
     padding: 40px 40px 0px 40px;
+    min-height: 100vh;
   }
   .hasil-rekomendasi {
     padding: 40px 40px 0px 40px;

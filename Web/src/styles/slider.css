@@ -5,6 +5,7 @@ input::-webkit-slider-thumb {
   height: 16px;
   background: #87805e;
   border-radius: 50%;
+  cursor: pointer;
 }
 /* input1 */
 

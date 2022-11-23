@@ -9,15 +9,15 @@
   border-radius: 30px;
 }
 
-.slidee p {
+.range-rekomendasi p {
   margin: 0;
 }
 
-.slidee h4 {
+.range-rekomendasi h4 {
   margin: 0;
 }
 
-.slidee button {
+.range-rekomendasi button {
   margin-bottom: 30px;
 }
 
@@ -41,6 +41,13 @@
   background-color: white;
   border-radius: 25px;
   overflow: hidden;
+}
+
+.desc-hasil > p {
+  -webkit-line-clamp: 8;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
 }
 
 .rating {
