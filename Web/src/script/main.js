@@ -10,7 +10,6 @@ import aboutImg from "../assets/images/pictureAbout.png";
 const main = () => {
   setNavbar();
   loadImages();
-  getCoffeeProduct("kopi toraja");
 };
 
 // formerly navbar.js
@@ -47,35 +46,5 @@ const loadImages = () => {
   githubImageElement.src = githubImg;
   $("#foot")[0].appendChild(githubImageElement);
 };
-
-const getCoffeeProduct = keyword => {
-  const headers = {
-    "X-RapidAPI-Key": "9fd999a328msh067a1d5f0078a52p140940jsn195a118590e1",
-		"X-RapidAPI-Host": "real-time-product-search.p.rapidapi.com"
-  };
-  keyword = keyword.replace(' ', '%20');
-
-  $.get({
-    url: `https://real-time-product-search.p.rapidapi.com/search?q=${keyword}&country=id&language=id`,
-    headers: headers,
-    beforeSend: () => {
-
-    },
-    complete: () => {
-
-    },
-    success: response => {
-      renderShopProduct(response.data);
-    },
-    error: err => {
-      alert(err);
-    }
-  });
-};
-
-const renderShopProduct = products => {
-  const shopGrid = document.querySelector('shop-grid');
-  shopGrid.products = products;
-}
 
 export default main;
