@@ -97,21 +97,17 @@ footer img {
 
 #shop {
   background-color: bisque;
-  height: 500px;
 }
 
 #shop .card {
-  width: 200px;
-  height: 300px;
-}
+  background-color: white;
+  width: 30vh;
+  height: 30vh;
 
-shop-grid::-webkit-scrollbar {
-  height: 8px;
-}
-
-shop-grid::-webkit-scrollbar-thumb {
-  border-radius: 4px;
-  background-color: rgba(94, 94, 94, 0.5);
+  @media screen and (max-width: 530px) {
+    width: 75vw;
+    height: 75vw;
+  }
 }
 
 #menu {
