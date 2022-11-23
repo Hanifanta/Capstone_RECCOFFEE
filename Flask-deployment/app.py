@@ -1,13 +1,13 @@
 import pandas as pd
 import numpy as np
-from sklearn.neighbors import KNeighborsClassifier
+from sklearn import svm
 from flask import Flask, request, jsonify
 from sklearn.metrics.pairwise import cosine_similarity
 import joblib
 from flask_cors import CORS
 
 # Loading model
-file = open('./model/kn_model.pkl', 'rb')
+file = open('./model/svm_model.pkl', 'rb')
 model = joblib.load(file)
 
 # Loading dataset
