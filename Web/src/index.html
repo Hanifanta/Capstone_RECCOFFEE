@@ -254,15 +254,43 @@
         </section>
       </article>
 
+      <!--other recommendation list-->
       <article
-        id="rekomendasi"
-        class="ppns d-flex flex-column text-center p-lg-5"
+        id="recommendation"
+        class="ppns d-flex flex-column text-center p-1 p-md-2 p-lg-3"
       >
-        <div>
-          <h2 class="osw">COFFE RECOMMENDATIONS</h2>
-          <p>We recommend coffee based on the coffee you are looking for.</p>
+        <div class="container py-4 text-center">
+          <div class="row">
+            <div class="col">
+              <h1 class="osw">COFFEE RECOMMENDATIONS</h1>
+              <p>We recommend coffee based on the coffee you are looking for.</p>
+            </div>
+          </div>
         </div>
-        <section class="item-rekomendasi flex-grow-1"></section>
+        <section class="flex-grow-1 rounded-4 shadow bg-light m-2 p-2">
+          <div class="accordion">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                  <div class="d-flex">
+                    <div class="recom-score rounded-3">
+                      <strong>96</strong>
+                    </div>
+                  </div>
+                  <div class="d-flex flex-column px-3">
+                    <h2 class="recom-name text-dark">David's Nose</h2>
+                    <span class="recom-origin text-dark">Honduras Blue Hole Estates</span>
+                  </div>
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapsed collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate iusto aliquid natus quis dolorum magnam similique repellat quibusdam, ullam sequi commodi iste, maxime a nihil numquam dolore aperiam corrupti? Excepturi!
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </article>
 
       <!-- about section -->
