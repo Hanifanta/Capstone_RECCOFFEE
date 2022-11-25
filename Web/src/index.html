@@ -86,84 +86,50 @@
           <!-- range slide rekomenfasi -->
           <div class="range-rekomendasi col-12 col-md-6 slidee ppns">
             <div class="heading-rekomendasi">
-              <h4 class="osw fs-3">
+              <h5 class="osw fs-3">
                 FIND THE PERFECT COFFEE <span> FOR YOUR TASTE</span>
-              </h4>
+              </h5>
               <p>Search for coffee in the flavor you want</p>
             </div>
             <div class="sliding-slider">
               <p>Aroma</p>
               <div class="range-input1">
-                <input
-                  type="range"
-                  min="0"
-                  max="10"
-                  value="0"
-                  step="0.1"
-                  id="aroma"
-                />
+                <input id="aroma" type="range" min="0" max="10" value="0" step="0.1" />
                 <div class="value1">
                   <div></div>
                 </div>
               </div>
-              <p>Accidity</p>
+              <p>Acidity</p>
               <div class="range-input2">
-                <input
-                  type="range"
-                  min="0"
-                  max="10"
-                  value="0"
-                  step="0.1"
-                  id="acid"
-                />
+                <input id="acid" type="range" min="0" max="10" value="0" step="0.1" />
                 <div class="value2">
                   <div></div>
                 </div>
               </div>
               <p>Body</p>
-              <div class="range-input3">
-                <input
-                  type="range"
-                  min="0"
-                  max="10"
-                  value="0"
-                  step="0.1"
-                  id="body"
-                />
+              <div  class="range-input3">
+                <input id="body" type="range" min="0" max="10" value="0" step="0.1" />
                 <div class="value3">
                   <div></div>
                 </div>
               </div>
               <p>Flavor</p>
               <div class="range-input4">
-                <input
-                  type="range"
-                  min="0"
-                  max="10"
-                  value="0"
-                  step="0.1"
-                  id="flavor"
-                />
+                <input id="flavor" type="range" min="0" max="10" value="0" step="0.1" />
                 <div class="value4">
                   <div></div>
                 </div>
               </div>
               <p>Aftertaste</p>
               <div class="range-input5">
-                <input
-                  type="range"
-                  min="0"
-                  max="10"
-                  value="0"
-                  step="0.1"
-                  id="aftertaste"
-                />
+                <input id="after-taste" type="range" min="0" max="10" value="0" step="0.1" />
                 <div class="value5">
                   <div></div>
                 </div>
               </div>
 
               <button
+                id="button-search"
                 type="button"
                 class="btn btn-sm btn-primary text-white fw-bold"
                 id="find-coffee"
@@ -175,32 +141,70 @@
           <!-- Hasil Rekomendasi -->
           <div
             class="hasil-rekomendasi-container col-12 col-md-6 d-flex flex-column"
-            id="hasil-rekomendasi-container"
-          ></div>
+          >
+            <div class="hasil-rekomendasi p-5 m-auto d-grid">
+              <div class="row">
+                <div class="rating text-center col-4 col-lg-2 d-grid">
+                  <p class="m-0 mt-auto">Rating</p>
+                  <h1 class="mb-auto">96</h1>
+                </div>
+                <div class="col-8 col-lg-10 d-grid">
+                  <h1 class="m-0 mt-auto">David's Nose</h1>
+                  <p class="m-0 mb-auto">Honduras Blue Hole Estates</p>
+                </div>
+              </div>
+              <div class="row my-3">
+                <div class="para col-6 col-lg-3">
+                  <p>Aroma</p>
+                  <p>Acid</p>
+                  <p>Body</p>
+                  <p>Flavor</p>
+                  <p>AfterTaste</p>
+                </div>
+                <div class="col-6 col-lg-3">
+                  <p>9.0</p>
+                  <p>8.0</p>
+                  <p>9.0</p>
+                  <p>9.0</p>
+                  <p>8.0</p>
+                </div>
+                <div class="col-12 col-lg-6 d-flex">
+                  <div class="desc-hasil d-flex flex-column">
+                    <p>
+                      <span class="fw-bold">Description :</span> Remarkably
+                      sweet, rich-toned, deeply floral. Star jasmine, lychee,
+                      dried ginger, cocoa nib, myrrh in aroma and cup. Sweetly
+                      tart structure with juicy, lively acidity; delicate, very
+                      syrupy mouthfeel. Crisp, long, fruit- and cocoa-toned
+                      finish.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <button id="button-other-coffee" class="btn btn-sm btn-primary text-white fw-bold me-auto">
+                See other coffee
+              </button>
+            </div>
+          </div>
         </section>
       </article>
 
+      <!--other recommendation list-->
       <article
-        id="rekomendasi"
-        class="ppns d-flex flex-column text-center p-lg-5 d-none"
+        id="recommendation"
+        class="ppns d-none d-flex flex-column text-center p-1 p-md-2 p-lg-3"
       >
-        <div>
-          <h2 class="osw">COFFE RECOMMENDATIONS</h2>
-          <p>We recommend coffee based on the coffee you are looking for.</p>
-        </div>
-        <section class="item-rekomendasi flex-grow-1"></section>
-      </article>
-
-      <article id="shop" class="container-fluid">
         <div class="container py-4 text-center">
           <div class="row">
             <div class="col">
-              <h1 class="osw">BUY HIGH QUALITY COFFEE</h1>
+              <h1 class="osw">COFFEE RECOMMENDATIONS</h1>
+              <p>We recommend coffee based on the coffee you are looking for.</p>
             </div>
           </div>
         </div>
-        <shop-grid class="row row-cols-auto px-5 py-3 justify-content-evenly">
-        </shop-grid>
+        <section id="recom-container" class="flex-grow-1 rounded-4 shadow bg-light m-2 p-2">
+          
+        </section>
       </article>
 
       <!-- about section -->
