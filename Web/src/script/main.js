@@ -1,5 +1,5 @@
 import $ from "jquery";
-import "./components/corousel.js";
+import "./components/corousel-list.js";
 import "./components/shop-grid.js";
 import "./components/team-list";
 // images import for WebPack
@@ -49,25 +49,25 @@ const loadImages = () => {
 };
 
 const api = () => {
-  const baseUrl = 'https://flask-production-30b0.up.railway.app';
+  const baseUrl = "https://flask-production-30b0.up.railway.app";
 
   document.getElementById("find-coffee").addEventListener("click", () => {
-    const aroma = document.getElementById('aroma').value;
-    const acid = document.getElementById('acid').value;
-    const body = document.getElementById('body').value;
-    const flavor = document.getElementById('flavor').value;
-    const aftertaste = document.getElementById('aftertaste').value;
+    const aroma = document.getElementById("aroma").value;
+    const acid = document.getElementById("acid").value;
+    const body = document.getElementById("body").value;
+    const flavor = document.getElementById("flavor").value;
+    const aftertaste = document.getElementById("aftertaste").value;
 
     const data = {
       aroma,
       acid,
       body,
       flavor,
-      aftertaste
+      aftertaste,
     };
 
-    predict(`${baseUrl}/predict`, 'POST', data, (data) => {
-      document.getElementById('hasil-rekomendasi-container').innerHTML = `
+    predict(`${baseUrl}/predict`, "POST", data, (data) => {
+      document.getElementById("hasil-rekomendasi-container").innerHTML = `
         <div class="hasil-rekomendasi p-5 m-auto d-grid">
           <div class="row">
             <div class="rating text-center col-4 col-lg-2 d-grid">
@@ -109,19 +109,19 @@ const api = () => {
       `;
     });
   });
-}
+};
 
 const predict = async (url, method, body, _callback) => {
   const response = await fetch(url, {
     method,
     headers: {
-      'Content-Type': 'application/json'
+      "Content-Type": "application/json",
     },
-    body: JSON.stringify(body)
+    body: JSON.stringify(body),
   });
   const data = await response.json();
   console.log(data);
   _callback(data);
-}
+};
 
 export default main;
