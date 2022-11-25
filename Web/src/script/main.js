@@ -1,8 +1,9 @@
 import $ from "jquery";
 
 import "./components/corousel-list.js";
+import "./components/hasil-rekomendasi.js";
+import "./components/recommendation-list.js";
 import "./components/team-list.js";
-import "./components/recommendation-list.js"
 
 // images import for WebPack
 import githubImg from "../assets/images/Github-logo.png";
@@ -52,6 +53,7 @@ const loadImages = () => {
 
 const setButtonsListener = () => {
   //button search
+
   $("#button-search").on("click", () => {
     const aroma = $("#aroma").val();
     const acid = $("#acid").val();
@@ -60,30 +62,30 @@ const setButtonsListener = () => {
     const afterTaste = $("#after-taste").val();
 
     const inputData = {
-      "aroma": aroma,
-      "acid_or_milk": acid,
-      "body": body,
-      "flavor": flavor,
-      "aftertaste": afterTaste
+      aroma: aroma,
+      acid_or_milk: acid,
+      body: body,
+      flavor: flavor,
+      aftertaste: afterTaste,
     };
 
     performSearch(inputData);
   });
 
   // button other recommendation
-  $("#button-other-coffee").on("click", () => {
-    $("#recommendation").toggleClass("d-none");
-  });
-}
+  // $("#button-other-coffee").on("click", () => {
+  //   $("#recommendation").toggleClass("d-none");
+  // });
+};
 
-const performSearch = data => {
-  const baseUrl = 'https://flask-production-30b0.up.railway.app';
+const performSearch = (data) => {
+  const baseUrl = "https://flask-production-30b0.up.railway.app";
 
   // ML API request
   $.post({
     url: `${baseUrl}/predict`,
     headers: {
-      'Content-Type': 'application/json'
+      "Content-Type": "application/json",
     },
     data: JSON.stringify(data),
     beforeSend: () => {
@@ -93,21 +95,23 @@ const performSearch = data => {
       // ketika request selesai
       // sebelum succes/ error
     },
-    success: response => {
+    success: (response) => {
       renderPredictionResult(response);
       renderRecommendationResult(response);
     },
-    error: err => {
+    error: (err) => {
       alert(err);
-    }
+    },
   });
 };
 
-const renderPredictionResult = response => {
-  // TODO
-}
+const renderPredictionResult = (response) => {
+  const hasilItem = document.createElement("hasil-result");
+  hasilItem.hasilnya = response;
+  $(".hasil-rekomendasi-container").empty().append(hasilItem);
+};
 
-const renderRecommendationResult = response => {
+const renderRecommendationResult = (response) => {
   const recommendationList = document.createElement("recommendation-list");
   recommendationList.data = response;
   $("#recom-container").empty().append(recommendationList);
