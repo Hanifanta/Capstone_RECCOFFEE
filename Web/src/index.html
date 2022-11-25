@@ -161,41 +161,42 @@
             <div class="sliding-slider">
               <p>Aroma</p>
               <div class="range-input1">
-                <input type="range" min="0" max="10" value="0" step="0.1" />
+                <input id="aroma" type="range" min="0" max="10" value="0" step="0.1" />
                 <div class="value1">
                   <div></div>
                 </div>
               </div>
-              <p>Accidity</p>
+              <p>Acidity</p>
               <div class="range-input2">
-                <input type="range" min="0" max="10" value="0" step="0.1" />
+                <input id="acid" type="range" min="0" max="10" value="0" step="0.1" />
                 <div class="value2">
                   <div></div>
                 </div>
               </div>
               <p>Body</p>
-              <div class="range-input3">
-                <input type="range" min="0" max="10" value="0" step="0.1" />
+              <div  class="range-input3">
+                <input id="body" type="range" min="0" max="10" value="0" step="0.1" />
                 <div class="value3">
                   <div></div>
                 </div>
               </div>
               <p>Flavor</p>
               <div class="range-input4">
-                <input type="range" min="0" max="10" value="0" step="0.1" />
+                <input id="flavor" type="range" min="0" max="10" value="0" step="0.1" />
                 <div class="value4">
                   <div></div>
                 </div>
               </div>
               <p>Aftertaste</p>
               <div class="range-input5">
-                <input type="range" min="0" max="10" value="0" step="0.1" />
+                <input id="after-taste" type="range" min="0" max="10" value="0" step="0.1" />
                 <div class="value5">
                   <div></div>
                 </div>
               </div>
 
               <button
+                id="button-search"
                 type="button"
                 class="btn btn-sm btn-primary text-white fw-bold"
               >
@@ -246,8 +247,8 @@
                   </div>
                 </div>
               </div>
-              <button class="btn btn-sm btn-primary text-white fw-bold me-auto">
-                See other coffe
+              <button id="button-other-coffee" class="btn btn-sm btn-primary text-white fw-bold me-auto">
+                See other coffee
               </button>
             </div>
           </div>
@@ -257,7 +258,7 @@
       <!--other recommendation list-->
       <article
         id="recommendation"
-        class="ppns d-flex flex-column text-center p-1 p-md-2 p-lg-3"
+        class="ppns d-none d-flex flex-column text-center p-1 p-md-2 p-lg-3"
       >
         <div class="container py-4 text-center">
           <div class="row">
@@ -267,10 +268,8 @@
             </div>
           </div>
         </div>
-        <section class="flex-grow-1 rounded-4 shadow bg-light m-2 p-2">
-          <recommendation-list>
-
-          </recommendation-list>
+        <section id="recom-container" class="flex-grow-1 rounded-4 shadow bg-light m-2 p-2">
+          
         </section>
       </article>
 

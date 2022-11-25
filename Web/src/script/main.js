@@ -10,8 +10,7 @@ import aboutImg from "../assets/images/pictureAbout.png";
 const main = () => {
   setNavbar();
   loadImages();
-  
-  $("recommendation-list").addClass("accordion");
+  setButtonsListener();
 };
 
 // formerly navbar.js
@@ -47,6 +46,69 @@ const loadImages = () => {
   const githubImageElement = new Image();
   githubImageElement.src = githubImg;
   $("#foot")[0].appendChild(githubImageElement);
+};
+
+const setButtonsListener = () => {
+  //button search
+  $("#button-search").on("click", () => {
+    const aroma = $("#aroma").val();
+    const acid = $("#acid").val();
+    const body = $("#body").val();
+    const flavor = $("#flavor").val();
+    const afterTaste = $("#after-taste").val();
+
+    const inputData = {
+      "aroma": aroma,
+      "acid_or_milk": acid,
+      "body": body,
+      "flavor": flavor,
+      "aftertaste": afterTaste
+    };
+
+    performSearch(inputData);
+  });
+
+  // button other recommendation
+  $("#button-other-coffee").on("click", () => {
+    $("#recommendation").toggleClass("d-none");
+  });
+}
+
+const performSearch = data => {
+  const baseUrl = 'https://flask-production-30b0.up.railway.app';
+
+  // ML API request
+  $.post({
+    url: `${baseUrl}/predict`,
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    data: JSON.stringify(data),
+    beforeSend: () => {
+      // ketika request akan dikirin
+    },
+    complete: () => {
+      // ketika request selesai
+      // sebelum succes/ error
+    },
+    success: response => {
+      renderPredictionResult(response);
+      renderRecommendationResult(response);
+    },
+    error: err => {
+      alert(err);
+    }
+  });
+};
+
+const renderPredictionResult = response => {
+  // TODO
+}
+
+const renderRecommendationResult = response => {
+  const recommendationList = document.createElement("recommendation-list");
+  recommendationList.data = response;
+  $("#recom-container").empty().append(recommendationList);
 };
 
 export default main;

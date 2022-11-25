@@ -6,6 +6,10 @@ class RecommendationItem extends HTMLElement {
        this.render();
     }
 
+    set info(info) {
+        this._info = info;
+    }
+
     render() {
         this.innerHTML = 
             `<div class="accordion-item">
@@ -13,12 +17,12 @@ class RecommendationItem extends HTMLElement {
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-${this._id}" aria-expanded="false" aria-controls="collapse-${this._id}">
                 <div class="d-flex">
                     <div class="recom-score rounded-3">
-                    <strong>96</strong>
+                    <strong>${this._info.rating}</strong>
                     </div>
                 </div>
                 <div class="d-flex flex-column px-3">
-                    <h2 class="osw recom-name text-dark">David's Nose</h2>
-                    <span class="recom-origin text-dark">Honduras Blue Hole Estates</span>
+                    <h2 class="osw recom-name text-dark">${this._info.name}</h2>
+                    <span class="recom-origin text-dark">${this._info.roaster}</span>
                 </div>
                 </button>
             </div>
@@ -28,27 +32,27 @@ class RecommendationItem extends HTMLElement {
                 justify-content-around">
                     <div class="col">
                     <h5>Aroma</h5>
-                    <b>9</b>
+                    <b>${this._info.aroma}</b>
                     </div>
                     <div class="col">
                     <h5>Acid</h5>
-                    <b>9</b>
+                    <b>${this._info.acid_or_milk}</b>
                     </div>
                     <div class="col">
                     <h5>Body</h5>
-                    <b>9</b>
+                    <b>${this._info.body}</b>
                     </div>
                     <div class="col">
                     <h5>Flavor</h5>
-                    <b>9</b>
+                    <b>${this._info.flavor}</b>
                     </div>
                     <div class="col">
                     <h5>Aftertaste</h5>
-                    <b>9</b>
+                    <b>${this._info.aftertaste}</b>
                     </div>
                 </div>
                 <div class="container-fluid text-start">
-                    <p><strong>Description: </strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta commodi consectetur cum earum impedit omnis quaerat aspernatur id quae quasi ut rem, asperiores illo expedita voluptate sed blanditiis. Nihil, impedit?</p>
+                    <p><strong>Description: </strong>${this._info.desc_1}</p>
                 </div>
                 <button class="btn btn-sm btn-primary text-white fw-bold me-auto">
                     Search on Google
