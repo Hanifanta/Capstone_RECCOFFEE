@@ -1,5 +1,5 @@
 import "bootstrap";
-import "./script/components/corousel.js";
+import "./script/components/corousel-list.js";
 import "./script/components/slider.js";
 import "./script/components/team-list.js";
 import main from "./script/main.js";

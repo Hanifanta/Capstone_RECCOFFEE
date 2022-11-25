@@ -1,7 +1,9 @@
 import $ from "jquery";
-import "./components/corousel.js";
+
+import "./components/corousel-list.js";
 import "./components/team-list.js";
 import "./components/recommendation-list.js"
+
 // images import for WebPack
 import githubImg from "../assets/images/Github-logo.png";
 import coffeeIcon from "../assets/images/Icon-recoffe.png";
