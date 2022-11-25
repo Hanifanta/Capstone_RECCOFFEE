@@ -153,49 +153,50 @@
           <!-- range slide rekomenfasi -->
           <div class="range-rekomendasi col-12 col-md-6 slidee ppns">
             <div class="heading-rekomendasi">
-              <h4 class="osw fs-3">
+              <h5 class="osw fs-3">
                 FIND THE PERFECT COFFEE <span> FOR YOUR TASTE</span>
-              </h4>
+              </h5>
               <p>Search for coffee in the flavor you want</p>
             </div>
             <div class="sliding-slider">
               <p>Aroma</p>
               <div class="range-input1">
-                <input type="range" min="0" max="10" value="0" step="0.1" />
+                <input id="aroma" type="range" min="0" max="10" value="0" step="0.1" />
                 <div class="value1">
                   <div></div>
                 </div>
               </div>
-              <p>Accidity</p>
+              <p>Acidity</p>
               <div class="range-input2">
-                <input type="range" min="0" max="10" value="0" step="0.1" />
+                <input id="acid" type="range" min="0" max="10" value="0" step="0.1" />
                 <div class="value2">
                   <div></div>
                 </div>
               </div>
               <p>Body</p>
-              <div class="range-input3">
-                <input type="range" min="0" max="10" value="0" step="0.1" />
+              <div  class="range-input3">
+                <input id="body" type="range" min="0" max="10" value="0" step="0.1" />
                 <div class="value3">
                   <div></div>
                 </div>
               </div>
               <p>Flavor</p>
               <div class="range-input4">
-                <input type="range" min="0" max="10" value="0" step="0.1" />
+                <input id="flavor" type="range" min="0" max="10" value="0" step="0.1" />
                 <div class="value4">
                   <div></div>
                 </div>
               </div>
               <p>Aftertaste</p>
               <div class="range-input5">
-                <input type="range" min="0" max="10" value="0" step="0.1" />
+                <input id="after-taste" type="range" min="0" max="10" value="0" step="0.1" />
                 <div class="value5">
                   <div></div>
                 </div>
               </div>
 
               <button
+                id="button-search"
                 type="button"
                 class="btn btn-sm btn-primary text-white fw-bold"
               >
@@ -246,35 +247,30 @@
                   </div>
                 </div>
               </div>
-              <button class="btn btn-sm btn-primary text-white fw-bold me-auto">
-                See other coffe
+              <button id="button-other-coffee" class="btn btn-sm btn-primary text-white fw-bold me-auto">
+                See other coffee
               </button>
             </div>
           </div>
         </section>
       </article>
 
+      <!--other recommendation list-->
       <article
-        id="rekomendasi"
-        class="ppns d-flex flex-column text-center p-lg-5"
+        id="recommendation"
+        class="ppns d-none d-flex flex-column text-center p-1 p-md-2 p-lg-3"
       >
-        <div>
-          <h2 class="osw">COFFE RECOMMENDATIONS</h2>
-          <p>We recommend coffee based on the coffee you are looking for.</p>
-        </div>
-        <section class="item-rekomendasi flex-grow-1"></section>
-      </article>
-
-      <article id="shop" class="container-fluid">
         <div class="container py-4 text-center">
           <div class="row">
             <div class="col">
-              <h1 class="osw">BUY HIGH QUALITY COFFEE</h1>
+              <h1 class="osw">COFFEE RECOMMENDATIONS</h1>
+              <p>We recommend coffee based on the coffee you are looking for.</p>
             </div>
           </div>
         </div>
-        <shop-grid class="row row-cols-auto px-5 py-3 justify-content-evenly">
-        </shop-grid>
+        <section id="recom-container" class="flex-grow-1 rounded-4 shadow bg-light m-2 p-2">
+          
+        </section>
       </article>
 
       <!-- about section -->

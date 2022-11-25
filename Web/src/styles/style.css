@@ -51,18 +51,23 @@ html {
   font-size: 10px;
 }
 
-#rekomendasi {
+#recommendation {
   background-image: url("../assets/images/bgMenu.png");
   background-size: cover;
   min-height: 100vh;
 }
 
-.item-rekomendasi {
-  background-color: white;
-  margin: 10px;
-  border-radius: 25px;
-  box-shadow: 0px 2px 5px 1px rgba(15, 15, 15, 0.25);
+.recom-score {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #87805e;
+  color: #2f2f2f;
+  font-size: xx-large;
+  width: 90px;
+  height: 90px;
 }
+
 aside {
   background-image: url("../assets/images/bgteam.png");
   color: white;
@@ -81,20 +86,6 @@ footer img {
   object-fit: fill;
 }
 
-#shop {
-  background-color: bisque;
-}
-
-#shop .card {
-  background-color: white;
-  width: 30vh;
-  height: 30vh;
-
-  @media screen and (max-width: 530px) {
-    width: 75vw;
-    height: 75vw;
-  }
-}
 
 @media screen and (max-width: 1030px) {
   .desc-hasil > p {
