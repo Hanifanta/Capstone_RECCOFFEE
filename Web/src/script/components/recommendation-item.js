@@ -52,13 +52,13 @@ class RecommendationItem extends HTMLElement {
                     </div>
                 </div>
                 <div class="container-fluid text-start">
-                    <p><strong>Description: </strong>${this._info.desc_1}</p>
+                    <p><strong>Blind Assessment: </strong>${this._info.desc_1}</p>
                 </div>
                 <div class="container-fluid text-start">
-                    <p><strong>Description: </strong>${this._info.desc_2}</p>
+                    <p><strong>Notes: </strong>${this._info.desc_2}</p>
                 </div>
                 <div class="container-fluid text-start">
-                    <p><strong>Description: </strong>${this._info.desc_3}</p>
+                    <p><strong>The Bottom Line: </strong>${this._info.desc_3}</p>
                 </div>
                 <a href="https://www.google.com/search?tbm=shop&q=${this._info.name}" target="_blank" class="btn btn-sm btn-primary text-white fw-bold me-auto">
                     Search on Google
