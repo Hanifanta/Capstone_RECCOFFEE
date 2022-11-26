@@ -19,7 +19,9 @@ class RecommendationList extends HTMLElement {
             rating: this._data.recom_rating1,
             origin: this._data.recom_origin1,
             roaster: this._data.recom_roaster1,
-            desc_1: this._data.recom_desc_11
+            desc_1: this._data.recom_desc_11,
+            desc_2: this._data.recom_desc_21,
+            desc_3: this._data.recom_desc_31
         };
         const recomData_2 = {
             link: this._data.recom_link2,
@@ -32,7 +34,9 @@ class RecommendationList extends HTMLElement {
             rating: this._data.recom_rating2,
             origin: this._data.recom_origin2,
             roaster: this._data.recom_roaster2,
-            desc_1: this._data.recom_desc_12
+            desc_1: this._data.recom_desc_12,
+            desc_2: this._data.recom_desc_22,
+            desc_3: this._data.recom_desc_32
         };
         const recomData_3 = {
             link: this._data.recom_link3,
@@ -45,7 +49,9 @@ class RecommendationList extends HTMLElement {
             rating: this._data.recom_rating3,
             origin: this._data.recom_origin3,
             roaster: this._data.recom_roaster3,
-            desc_1: this._data.recom_desc_13
+            desc_1: this._data.recom_desc_13,
+            desc_2: this._data.recom_desc_23,
+            desc_3: this._data.recom_desc_33
         };
         const recomData_4 = {
             link: this._data.recom_link4,
@@ -58,7 +64,9 @@ class RecommendationList extends HTMLElement {
             rating: this._data.recom_rating4,
             origin: this._data.recom_origin4,
             roaster: this._data.recom_roaster4,
-            desc_1: this._data.recom_desc_14
+            desc_1: this._data.recom_desc_14,
+            desc_2: this._data.recom_desc_24,
+            desc_3: this._data.recom_desc_34
         };
         const recomData_5 = {
             link: this._data.recom_link5,
@@ -71,7 +79,9 @@ class RecommendationList extends HTMLElement {
             rating: this._data.recom_rating5,
             origin: this._data.recom_origin5,
             roaster: this._data.recom_roaster5,
-            desc_1: this._data.recom_desc_15
+            desc_1: this._data.recom_desc_15,
+            desc_2: this._data.recom_desc_25,
+            desc_3: this._data.recom_desc_35
         };
 
         return [recomData_1, recomData_2, recomData_3, recomData_4, recomData_5];

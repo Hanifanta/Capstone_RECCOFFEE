@@ -22,7 +22,7 @@ class RecommendationItem extends HTMLElement {
                 </div>
                 <div class="d-flex flex-column px-3">
                     <h2 class="osw recom-name text-dark">${this._info.name}</h2>
-                    <span class="recom-origin text-dark">${this._info.roaster}</span>
+                    <span class="recom-origin text-dark">${this._info.origin}</span>
                 </div>
                 </button>
             </div>
@@ -54,9 +54,18 @@ class RecommendationItem extends HTMLElement {
                 <div class="container-fluid text-start">
                     <p><strong>Description: </strong>${this._info.desc_1}</p>
                 </div>
-                <button class="btn btn-sm btn-primary text-white fw-bold me-auto">
+                <div class="container-fluid text-start">
+                    <p><strong>Description: </strong>${this._info.desc_2}</p>
+                </div>
+                <div class="container-fluid text-start">
+                    <p><strong>Description: </strong>${this._info.desc_3}</p>
+                </div>
+                <a href="https://www.google.com/search?tbm=shop&q=${this._info.name}" target="_blank" class="btn btn-sm btn-primary text-white fw-bold me-auto">
                     Search on Google
-                </button>
+                </a>
+                <a href="${this._info.link}" target="_blank" class="btn btn-sm btn-primary text-white fw-bold me-auto">
+                    See detail coffee
+                </a>
                 </div>
             </div>
   
