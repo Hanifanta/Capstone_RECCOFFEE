@@ -28,6 +28,10 @@
 - Joblib
 - Bootstrap
 
+### API
+- [Coffee Menu] (https://api.sampleapis.com/coffee)
+- [Back-End Machine learning] (https://flask-production-30b0.up.railway.app)
+
 ### Algoritma
 - Support Vector Machine
 - K-Nearest Neighbors
