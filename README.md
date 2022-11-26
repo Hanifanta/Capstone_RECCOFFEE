@@ -13,15 +13,19 @@
 
 ### Bahasa Pemrograman & Markup
 - Python
+- JavaScript
 - HTML
 
 ### Library dan Framework
-- Tensorflow
-- Scikit-Learn
+- Numpy
 - Pandas
 - Seaborn
 - Matplotlib
+- Scikit-Learn
+- BeautifulSoup
 - Flask
+- Gunicorn
+- Joblib
 - Bootstrap
 
 ### Algoritma
