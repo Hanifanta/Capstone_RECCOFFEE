@@ -48,6 +48,12 @@ const loadImages = () => {
 
   const githubImageElement = new Image();
   githubImageElement.src = githubImg;
+  githubImageElement.title = "GitHub.com";
+  githubImageElement.style.cursor = "pointer";
+
+  $(githubImageElement).on("click", () => {
+    window.open("https://github.com/Hanifanta/Capstone_RECCOFFEE.git", "_blank");
+  });
   $("#foot")[0].appendChild(githubImageElement);
 };
 
@@ -71,11 +77,6 @@ const setButtonsListener = () => {
 
     performSearch(inputData);
   });
-
-  // button other recommendation
-  // $("#button-other-coffee").on("click", () => {
-  //   $("#recommendation").toggleClass("d-none");
-  // });
 };
 
 const performSearch = (data) => {
