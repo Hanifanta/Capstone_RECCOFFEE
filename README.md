@@ -45,9 +45,8 @@
 - [Coffee Review Dataset](https://www.kaggle.com/datasets/hanifalirsyad/coffee-scrap-coffeereview) (Web Scraping)
 
 ## Documentation
--
--
--
+- npm install
+- npm run start-dev
 
 ## Our Team
 
