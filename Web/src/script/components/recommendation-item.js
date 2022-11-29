@@ -14,7 +14,7 @@ class RecommendationItem extends HTMLElement {
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-${this._id}" aria-expanded="false" aria-controls="collapse-${this._id}">
                 <div class="d-flex">
                     <div class="recom-score rounded-3">
-                    <strong>${this._info.rating}</strong>
+                    <strong class="text-white">${this._info.rating}</strong>
                     </div>
                 </div>
                 <div class="d-flex flex-column px-3">
@@ -57,10 +57,17 @@ class RecommendationItem extends HTMLElement {
                 <div class="container-fluid text-start">
                     <p><strong>The Bottom Line: </strong>${this._info.desc_3}</p>
                 </div>
-                <a href="https://www.google.com/search?tbm=shop&q=${this._info.name}" target="_blank" class="btn btn-sm btn-primary text-white fw-bold me-auto btn-rounded">
+                <a 
+                href="https://www.google.com/search?tbm=shop&q=${this._info.name}+coffee" 
+                target="_blank" 
+                class="btn btn-sm btn-primary text-white fw-bold me-auto btn-rounded"
+                >
                     Search on Google
                 </a>
-                <a href="${this._info.link}" target="_blank" class="btn btn-sm btn-primary  btn-rounded text-white fw-bold me-auto">
+                <a href="${this._info.link}" 
+                target="_blank" 
+                class="btn btn-sm btn-primary text-white fw-bold me-auto btn-rounded"
+                >
                     See detail coffee
                 </a>
                 </div>

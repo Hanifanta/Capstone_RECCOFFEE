@@ -11,7 +11,7 @@ class Hasil extends HTMLElement {
     this.innerHTML = `
        
               <div class="row">
-                <div class="rating text-center col-4 col-lg-2 d-grid">
+                <div class="rating text-center col-4 col-lg-2 d-grid rounded-3">
                   <p class="m-0 mt-auto">Rating</p>
                   <h1 class="mb-auto">${this._item.rating}</h1>
                 </div>
