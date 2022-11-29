@@ -9,8 +9,10 @@ import "./components/team-list.js";
 import githubImg from "../assets/images/Github-logo.png";
 import coffeeIcon from "../assets/images/Icon-recoffe.png";
 import aboutImg from "../assets/images/pictureAbout.png";
+import favIcon from "../assets/images/favicon.png";
 
 const main = () => {
+  setFavIcon();
   setNavbar();
   loadImages();
   setButtonsListener();
@@ -51,6 +53,12 @@ const loadImages = () => {
 
   const githubImageElement = new Image();
   githubImageElement.src = githubImg;
+  githubImageElement.title = "GitHub.com";
+  githubImageElement.style.cursor = "pointer";
+
+  $(githubImageElement).on("click", () => {
+    window.open("https://github.com/Hanifanta/Capstone_RECCOFFEE.git", "_blank");
+  });
   $("#foot")[0].appendChild(githubImageElement);
 };
 
@@ -120,6 +128,14 @@ const renderRecommendationResult = (response) => {
   const recommendationList = document.createElement("recommendation-list");
   recommendationList.data = response;
   $("#recom-container").empty().append(recommendationList);
+};
+
+const setFavIcon = () => {
+  const documentHead = document.querySelector("head");
+  const faviconLink = document.createElement("link");
+  faviconLink.setAttribute("rel", "shortcut icon");
+  faviconLink.setAttribute("href", favIcon);
+  documentHead.appendChild(faviconLink);
 };
 
 export default main;
