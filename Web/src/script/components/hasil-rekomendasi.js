@@ -1,12 +1,13 @@
 import $ from "jquery";
 class Hasil extends HTMLElement {
   set hasilnya(item) {
+    console.log(item);
     this._item = item;
     this.render();
   }
 
   render() {
-    this.classList.add("hasil-rekomendasi", "p-5", "m-auto", "d-grid");
+    this.classList.add("hasil-rekomendasi", "m-auto", "d-grid");
     this.innerHTML = `
        
               <div class="row">
@@ -42,14 +43,39 @@ class Hasil extends HTMLElement {
                     </p>
                   </div>
                 </div>
+                <div class="d-flex">
+                  <button
+                    id="button-other-coffee"
+                    class="btn btn-sm btn-primary text-white fw-bold me-3"
+                  >
+                    See other coffee
+                  </button>
+
+                  <a
+                    id="button-other-coffee"
+                    class="btn btn-sm btn-primary text-white fw-bold me-auto"
+                    target="_blank" 
+                    href="https://www.google.com/search?tbm=shop&q=${this._item.name}+coffee">
+                    Search on Google
+                  </a>
+
+                  <div class="ms-auto">
+                  <a href="${this._item.link}" 
+                  target="_blank" 
+                  class="me-auto">
+                  <i>Details ></i>
+                  </a>
+                  </div>
+
+                </div>
               </div>
-              <button id="button-other-coffee" class="btn btn-sm btn-primary text-white fw-bold me-auto">
-                See other coffee
-              </button>
+            
+              
           
     `;
     const show = () => {
       $("#recommendation").toggleClass("d-none");
+      $("#recommendation")[0].scrollIntoView();
     };
     this.querySelector("#button-other-coffee").addEventListener("click", show);
   }
