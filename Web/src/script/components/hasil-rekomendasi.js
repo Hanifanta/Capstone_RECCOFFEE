@@ -16,8 +16,8 @@ class Hasil extends HTMLElement {
                   <h1 class="mb-auto">${this._item.rating}</h1>
                 </div>
                 <div class="col-8 col-lg-10 d-grid">
-                  <h1 class="m-0 mt-auto">${this._item.roaster}</h1>
-                  <p class="m-0 mb-auto">${this._item.name}</p>
+                  <h1 class="m-0 mt-auto">${this._item.name}</h1>
+                  <p class="m-0 mb-auto">${this._item.origin}</p>
                 </div>
               </div>
               <div class="row my-3">
