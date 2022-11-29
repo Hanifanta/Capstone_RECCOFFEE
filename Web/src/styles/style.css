@@ -10,6 +10,10 @@
   --widthrange: 80%;
 }
 
+.anim {
+  transition: all 2s;
+}
+
 .ppns {
   font-family: "Poppins", sans-serif;
 }
@@ -20,10 +24,6 @@
 
 .bdr {
   border: solid red;
-}
-
-.bdrb {
-  border: solid blue;
 }
 
 html {
@@ -41,11 +41,6 @@ html {
   font-size: clamp(50px, 8vw, 100px);
 }
 
-#menu {
-  background-image: url("../assets/images/bgMenu.png");
-  background-size: cover;
-}
-
 .sub-title {
   color: #666666;
   font-size: 10px;
@@ -54,7 +49,6 @@ html {
 #recommendation {
   background-image: url("../assets/images/bgMenu.png");
   background-size: cover;
-  min-height: 100vh;
 }
 
 .recom-score {
@@ -86,7 +80,6 @@ footer img {
   object-fit: fill;
 }
 
-
 @media screen and (max-width: 1030px) {
   .desc-hasil > p {
     -webkit-line-clamp: 7;
@@ -116,27 +109,42 @@ footer img {
   :root {
     --widthrange: 100%;
   }
-}
-@media screen and (max-width: 576px) {
-  :root {
-    --widthrange: 100%;
+
+  .heading-rekomendasi {
+    width: 100%;
+    text-align: center;
   }
 
+  .heading-rekomendasi > h5 {
+    font-size: clamp(1rem, 7vw, 2rem) !important;
+  }
+
+  .heading-rekomendasi > h4 > span {
+    display: block;
+  }
+}
+@media screen and (max-width: 576px) {
   #find {
     padding: 0px;
     height: auto;
   }
 
   .range-rekomendasi {
-    padding: 40px 40px 0px 40px;
-    min-height: 100vh;
+    padding: 40px;
   }
   .hasil-rekomendasi {
     padding: 40px 40px 0px 40px;
     border-radius: 0px;
   }
+}
 
-  /* .hasil-rekomendasi-container {
-    display: none !important;
-  } */
+@media screen and (max-width: 350px) {
+  #menu img {
+    max-width: 150px;
+    max-height: 150px;
+  }
+
+  .menu_title > h2 {
+    font-size: 1.5rem !important;
+  }
 }

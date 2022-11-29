@@ -2,13 +2,16 @@
   background-image: url("../assets/images/bgRekomendasi.png");
   background-size: cover;
   padding: 40px;
-  min-height: 95vh;
 }
 
-#find button {
+#find button,
+#find a {
   border-radius: 30px;
 }
 
+.range-rekomendasi button {
+  margin-bottom: 30px;
+}
 .range-rekomendasi p {
   margin: 0;
 }
@@ -17,23 +20,20 @@
   margin: 0;
 }
 
-.range-rekomendasi button {
-  margin-bottom: 30px;
-}
-
 .heading-rekomendasi {
   width: 70%;
 }
+
 .heading-rekomendasi > p {
   font-size: 14px;
 }
 
-.heading-rekomendasi > h4 > span {
+.heading-rekomendasi > h5 > span {
   display: block;
 }
 
 .sliding-slider {
-  padding: 30px 0px;
+  padding: 30px 0 0 0;
   font-weight: 500;
 }
 
@@ -41,6 +41,32 @@
   background-color: white;
   border-radius: 25px;
   overflow: hidden;
+}
+.anim {
+  -webkit-animation: fadeInAnimation ease 3s;
+  animation: fadeInAnimation ease 3s;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .desc-hasil > p {

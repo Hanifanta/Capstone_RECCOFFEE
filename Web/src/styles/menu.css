@@ -2,35 +2,9 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.0.2/css/glide.theme.css");
 
 #menu {
-  height: 95vh;
-}
-
-.menu_title > p {
-  font-size: xx-large;
-}
-.glide__slides {
-  text-align: center;
-  justify-items: center;
-  align-content: center;
-}
-
-.glide__slide h2 {
-  padding-top: 2vh;
-}
-
-.glide__slide p {
-  padding: 0 8vh;
-}
-
-.menu_title {
-  height: 15%;
-}
-
-.menu_title > p {
-  font-weight: 500;
-}
-.corousel {
-  height: 85%;
+  background-image: url("../assets/images/bgMenu.png");
+  background-size: cover;
+  height: 100vh;
 }
 
 #menu img {
@@ -47,6 +21,22 @@
   object-position: center;
 }
 
+.menu_title > h1 {
+  font-size: clamp(1rem, calc(2rem + 1vh), 5rem);
+}
+.glide__slides {
+  text-align: center;
+  justify-items: center;
+  align-content: center;
+}
+
+.glide__slide h2 {
+  padding-top: 2vh;
+}
+
+.glide__slide p {
+  padding: 0 8vh;
+}
 .glide__slide > p {
   font-size: smaller;
   color: #666666;
@@ -56,26 +46,19 @@
   -webkit-box-orient: vertical;
 }
 
-@media screen and (max-width: 600px) {
-  /* #menu {
-    height: -webkit-max-content;
-    height: -moz-max-content;
-    height: max-content;
+@media screen and (max-width: 900px) {
+  #menu img {
+    width: calc(80vw) !important;
+    height: calc(80vw);
+    max-width: 300px;
+    max-height: 300px;
+  }
+
+  /* .menu_title > h1 {
+    font-size: 2rem !important;
   } */
 
-  .menu_title {
-    height: 20%;
-  }
-
-  .corousel {
-    height: 80%;
-  }
-
-  .menu_title > p {
-    font-size: max(30px, 6vw);
-  }
-
-  .menu_title > p > span {
+  .menu_title > h1 > span {
     display: block;
   }
 
