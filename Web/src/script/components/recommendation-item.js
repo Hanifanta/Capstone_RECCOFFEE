@@ -60,10 +60,10 @@ class RecommendationItem extends HTMLElement {
                 <div class="container-fluid text-start">
                     <p><strong>The Bottom Line: </strong>${this._info.desc_3}</p>
                 </div>
-                <a href="https://www.google.com/search?tbm=shop&q=${this._info.name}" target="_blank" class="btn btn-sm btn-primary text-white fw-bold me-auto">
+                <a href="https://www.google.com/search?tbm=shop&q=${this._info.name}" target="_blank" class="btn btn-sm btn-primary text-white fw-bold me-auto btn-rounded">
                     Search on Google
                 </a>
-                <a href="${this._info.link}" target="_blank" class="btn btn-sm btn-primary text-white fw-bold me-auto">
+                <a href="${this._info.link}" target="_blank" class="btn btn-sm btn-primary  btn-rounded text-white fw-bold me-auto">
                     See detail coffee
                 </a>
                 </div>

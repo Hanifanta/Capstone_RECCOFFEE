@@ -104,6 +104,10 @@ footer img {
   }
 }
 
+.btn-rounded {
+  border-radius: 30px;
+}
+
 @media screen and (max-width: 992px) {
   .desc-hasil > p {
     -webkit-line-clamp: 2;
