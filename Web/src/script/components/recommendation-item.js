@@ -1,18 +1,15 @@
-import $ from "jquery";
-
 class RecommendationItem extends HTMLElement {
-    set id(id){
-       this._id = id;
-       this.render();
-    }
+  set id(id) {
+    this._id = id;
+    this.render();
+  }
 
-    set info(info) {
-        this._info = info;
-    }
+  set info(info) {
+    this._info = info;
+  }
 
-    render() {
-        this.innerHTML = 
-            `<div class="accordion-item">
+  render() {
+    this.innerHTML = `<div class="accordion-item">
                 <div class="accordion-header" id="heading-${this._id}">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-${this._id}" aria-expanded="false" aria-controls="collapse-${this._id}">
                 <div class="d-flex">
@@ -70,7 +67,7 @@ class RecommendationItem extends HTMLElement {
             </div>
   
             </div>`;
-    }
+  }
 }
 
 customElements.define("recommendation-item", RecommendationItem);

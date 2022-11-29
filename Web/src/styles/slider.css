@@ -1,5 +1,17 @@
 input::-webkit-slider-thumb {
   -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  background: #87805e;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+input::-moz-range-thumb {
+  -webkit-appearance: none;
+  -moz-appearance: none;
   appearance: none;
   width: 16px;
   height: 16px;

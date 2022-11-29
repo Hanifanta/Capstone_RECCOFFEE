@@ -9,7 +9,7 @@
   <body>
     <header>
       <nav class="navbar navbar-expand-sm bg-light fixed-top">
-        <div class="container-fluid">
+        <div class="container-fluid px-4">
           <a class="navbar-brand" href="#"> </a>
           <button
             class="navbar-toggler"
@@ -27,23 +27,21 @@
             id="navbarSupportedContent"
           >
             <div class="me-auto"></div>
-            <ul class="navbar-nav mb-2 mb-lg-0">
+            <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active ppns" aria-current="page" href="#"
-                  >Home</a
-                >
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link ppns" href="#menu">Menu</a>
+                <a class="nav-link" href="#menu">Menu</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link ppns" href="#find">Find</a>
+                <a class="nav-link" href="#find">Find</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link ppns" href="#about">About</a>
+                <a class="nav-link" href="#about">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link ppns" href="#team">Team</a>
+                <a class="nav-link" href="#team">Team</a>
               </li>
             </ul>
           </div>
@@ -54,7 +52,7 @@
       <!-- HomePage -->
       <article
         id="home"
-        class="vh-100 container-fluid d-flex align-items-center justify-content-center flex-column"
+        class="container-fluid d-flex align-items-center justify-content-center flex-column"
       >
         <section class="home-content">
           <h1 class="osw text-center text-white"><b>RECCOFFEE</b></h1>
@@ -68,11 +66,14 @@
       </article>
 
       <!--Menu + Corousel-->
-      <article id="menu" class="container-fluid p-2">
-        <div class="menu_title d-flex align-items-end justify-content-center">
-          <p class="osw m-0 text-center">
+      <article
+        id="menu"
+        class="container-fluid p-0 p-sm-2 d-flex flex-column justify-content-evenly"
+      >
+        <div class="menu_title">
+          <h1 class="osw m-0 text-center">
             WE BELIEVE IN <span> GREAT-TASTING COFFEE</span>
-          </p>
+          </h1>
         </div>
         <corousel-list></corousel-list>
       </article>
@@ -81,14 +82,14 @@
       <article id="find" class="container-fluid overflow-hidden">
         <section class="row">
           <!-- range slide rekomenfasi -->
-          <div class="range-rekomendasi col-12 col-md-6 slidee ppns">
-            <div class="heading-rekomendasi">
-              <h5 class="osw fs-3">
+          <div class="range-rekomendasi col-12 col-md-6 ppns d-grid">
+            <div class="heading-rekomendasi mt-auto">
+              <h2 class="osw">
                 FIND THE PERFECT COFFEE <span> FOR YOUR TASTE</span>
-              </h5>
+              </h2>
               <p>Search for coffee in the flavor you want</p>
             </div>
-            <div class="sliding-slider">
+            <div class="sliding-slider mb-auto">
               <p>Aroma</p>
               <div class="range-input1">
                 <input
@@ -159,7 +160,6 @@
                   <div></div>
                 </div>
               </div>
-
               <button
                 id="button-search"
                 type="button"

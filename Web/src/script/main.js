@@ -21,7 +21,10 @@ const setNavbar = () => {
   $(".nav-link").on("click", function () {
     $(".navbar-toggler").toggleClass("collapsed");
     $(".navbar-collapse").removeClass("show");
+    $(".navbar-nav").find("a.active").removeClass("active");
+    $(this).addClass("active");
   });
+
   const navbar_height = document
     .querySelector(".navbar")
     .getBoundingClientRect().height;
@@ -71,11 +74,6 @@ const setButtonsListener = () => {
 
     performSearch(inputData);
   });
-
-  // button other recommendation
-  // $("#button-other-coffee").on("click", () => {
-  //   $("#recommendation").toggleClass("d-none");
-  // });
 };
 
 const performSearch = (data) => {
@@ -105,10 +103,17 @@ const performSearch = (data) => {
   });
 };
 
+const startAnimateCounters = () => {
+  $(".hasil-rekomendasi").addClass("p-5 anim");
+};
+
 const renderPredictionResult = (response) => {
   const hasilItem = document.createElement("hasil-result");
   hasilItem.hasilnya = response;
   $(".hasil-rekomendasi-container").empty().append(hasilItem);
+
+  startAnimateCounters();
+  $(".hasil-rekomendasi-container")[0].scrollIntoView();
 };
 
 const renderRecommendationResult = (response) => {
