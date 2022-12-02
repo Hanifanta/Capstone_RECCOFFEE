@@ -13,12 +13,12 @@
 - Google Colab
 - Visual Studio Code
 
-### Bahasa Pemrograman & Markup
+### Programming and Markup language
 - Python
 - JavaScript
 - HTML
 
-### Library dan Framework
+### Library and Framework
 - Numpy
 - Pandas
 - Seaborn
@@ -34,12 +34,14 @@
 - [Coffee Menu](https://api.sampleapis.com/coffee)
 - [Back-End Machine learning](https://flask-production-30b0.up.railway.app)
 
-### Algoritma
+### Algorithm
 - Support Vector Machine
 - K-Nearest Neighbors
 - Random Forest
+- Decision Tree Classifier
+- Gaussian Naive Bayes **(Deployed for production phase)**
 
-### Ekstensi Visual Studio Code
+### Visual Studio Code extension
 - Live Server
 - Python
 
