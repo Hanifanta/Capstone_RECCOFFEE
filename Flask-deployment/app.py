@@ -1,13 +1,13 @@
 import pandas as pd
 import numpy as np
-from sklearn import svm
 from flask import Flask, request, jsonify
 from sklearn.metrics.pairwise import cosine_similarity
+from sklearn.naive_bayes import GaussianNB
 import joblib
 from flask_cors import CORS
 
 # Loading model
-file = open('./model/svm_model.pkl', 'rb')
+file = open('./model/nb_model.pkl', 'rb')
 model = joblib.load(file)
 
 # Loading dataset
