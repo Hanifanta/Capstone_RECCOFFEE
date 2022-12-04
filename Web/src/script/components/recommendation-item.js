@@ -32,7 +32,7 @@ class RecommendationItem extends HTMLElement {
                     <b>${this._info.aroma}</b>
                     </div>
                     <div class="col">
-                    <h5>Acid</h5>
+                    <h5>Acidity</h5>
                     <b>${this._info.acid_or_milk}</b>
                     </div>
                     <div class="col">

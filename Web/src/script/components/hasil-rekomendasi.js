@@ -23,10 +23,10 @@ class Hasil extends HTMLElement {
               <div class="row my-3">
                 <div class="para col-6 col-lg-3">
                   <p>Aroma</p>
-                  <p>Acid</p>
+                  <p>Acidity</p>
                   <p>Body</p>
                   <p>Flavor</p>
-                  <p>AfterTaste</p>
+                  <p>Aftertaste</p>
                 </div>
                 <div class="col-6 col-lg-3">
                   <p>${this._item.aroma}</p>
