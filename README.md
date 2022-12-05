@@ -1,6 +1,6 @@
 # Reccoffee - Studi Independen Dicoding Capstone by C22-141
 
-[![Home.jpg](https://i.postimg.cc/Y9XT0HTy/Home.jpg)](https://postimg.cc/wymw4Sqh)
+[![Reccoffee.jpg](https://i.postimg.cc/mg5qjHK4/Home.jpg)](https://postimg.cc/0z7c2b8X)
 
 ## About Reccoffee
 **RECCOFEE** is a website used to provide recommendations for coffee types based on user preferences. but not only that, we also provide information about coffee drinks and provide features for purchasing quality coffee beans.
