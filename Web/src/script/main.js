@@ -6,7 +6,7 @@ import "./components/recommendation-list.js";
 import "./components/team-list.js";
 
 // images import for WebPack
-import githubImg from "../assets/images/Github-logo.png";
+import githubImg from "../assets/images/GitHub-logo.png";
 import coffeeIcon from "../assets/images/Icon-recoffe.png";
 import aboutImg from "../assets/images/pictureAbout.png";
 import favIcon from "../assets/images/favicon.png";
@@ -57,7 +57,7 @@ const loadImages = () => {
   githubImageElement.style.cursor = "pointer";
 
   $(githubImageElement).on("click", () => {
-    window.open("https://github.com/Hanifanta/Capstone_RECCOFFEE.git", "_blank");
+    window.open("https://github.com/Hanifanta/Capstone_RECCOFFEE", "_blank");
   });
   $("#foot")[0].appendChild(githubImageElement);
 };
@@ -85,7 +85,7 @@ const setButtonsListener = () => {
 };
 
 const performSearch = (data) => {
-  const baseUrl = "https://flask-production-30b0.up.railway.app";
+  const baseUrl = "https://reccoffee-backend.up.railway.app/";
 
   // ML API request
   $.post({
