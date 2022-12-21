@@ -69,7 +69,7 @@ npm run start-dev
 ```
 
 Or you can or you can directly visit our website
-#### [**Click here to view Reccoffee**](https://beta-recoffe.vercel.app)
+#### [**Click here to view Reccoffee**](https://capstone-reccoffee.vercel.app)
 
 ## Our Team
 
